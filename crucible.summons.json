@@ -1,0 +1,72 @@
+{
+    "label": "Summons",
+    "folders": {
+        "Gesture: Create": "Gesture: Create"
+    },
+    "entries": {
+        "Bony Claws": {
+            "name": "Bony Claws"
+        },
+        "Creation of Death": {
+            "name": "Creation of Death"
+        },
+        "Creation of Earth": {
+            "name": "Creation of Earth"
+        },
+        "Creation of Flame": {
+            "name": "Creation of Flame"
+        },
+        "Creation of Frost": {
+            "name": "Creation of Frost"
+        },
+        "Creation of Storm": {
+            "name": "Creation of Storm"
+        },
+        "Deathly Armor": {
+            "name": "Deathly Armor"
+        },
+        "Earthen Claw": {
+            "name": "Earthen Claw"
+        },
+        "Elemental Armor": {
+            "name": "Elemental Armor"
+        },
+        "Flame Claw": {
+            "name": "Flame Claw"
+        },
+        "Gesture: Arrow": {
+            "name": "Gesture: Arrow"
+        },
+        "Gesture: Fan": {
+            "name": "Gesture: Fan"
+        },
+        "Gesture: Influence": {
+            "name": "Gesture: Influence"
+        },
+        "Gesture: Ray": {
+            "name": "Gesture: Ray"
+        },
+        "Icy Claw": {
+            "name": "Icy Claw"
+        },
+        "Rune: Death": {
+            "name": "Rune: Death"
+        },
+        "Rune: Earth": {
+            "name": "Rune: Earth"
+        },
+        "Rune: Flame": {
+            "name": "Rune: Flame"
+        },
+        "Rune: Frost": {
+            "name": "Rune: Frost"
+        },
+        "Rune: Lightning": {
+            "name": "Rune: Lightning"
+        },
+        "Voltaic Claw": {
+            "name": "Voltaic Claw"
+        }
+    },
+    "mapping": {}
+}

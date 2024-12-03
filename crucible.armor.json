@@ -1,0 +1,56 @@
+{
+    "label": "Armor",
+    "folders": {
+        "Medium": "Medium",
+        "Light": "Light",
+        "Heavy": "Heavy"
+    },
+    "entries": {
+        "Brigandine": {
+            "name": "Brigandine",
+            "description": ""
+        },
+        "Chain Mail": {
+            "name": "Chain Mail",
+            "description": {
+                "public": "<p>Chain Mail public description.</p>",
+                "secret": "<p>Chain Mail secret description.</p>"
+            }
+        },
+        "Heavy Hides": {
+            "name": "Heavy Hides",
+            "description": ""
+        },
+        "Leather Armor": {
+            "name": "Leather Armor",
+            "description": ""
+        },
+        "Padded Armor": {
+            "name": "Padded Armor",
+            "description": ""
+        },
+        "Plate Mail": {
+            "name": "Plate Mail",
+            "description": ""
+        },
+        "Ring Mail": {
+            "name": "Ring Mail",
+            "description": ""
+        },
+        "Scale Mail": {
+            "name": "Scale Mail",
+            "description": ""
+        },
+        "Splint Mail": {
+            "name": "Splint Mail",
+            "description": ""
+        },
+        "Studded Leather Armor": {
+            "name": "Studded Leather Armor",
+            "description": ""
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

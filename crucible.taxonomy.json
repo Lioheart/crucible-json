@@ -1,0 +1,63 @@
+{
+    "label": "Taxonomy",
+    "folders": {
+        "Elemental": "Elemental",
+        "Undead": "Undead",
+        "Giant": "Giant",
+        "Humanoid": "Humanoid",
+        "Beast": "Beast"
+    },
+    "entries": {
+        "Boar": {
+            "name": "Boar",
+            "description": "<p>Mammals with thick hide, dangerous tusks, and a powerful low-seated center of mass.</p>"
+        },
+        "Earth Elemental": {
+            "name": "Earth Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Earth.</p>"
+        },
+        "Fire Elemental": {
+            "name": "Fire Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Fire.</p>"
+        },
+        "Frost Elemental": {
+            "name": "Frost Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Frost.</p>"
+        },
+        "Hobgoblin": {
+            "name": "Hobgoblin",
+            "description": "Hobgoblins are humanoids which typically congregate in martial societies which are orderly and disciplined. Hobgoblins are both cunning and uncompromising, making dangerous foes or powerful allies."
+        },
+        "Human": {
+            "name": "Human",
+            "description": "<p>Humans are adaptable, determined, and versatile.</p>"
+        },
+        "Hyena": {
+            "name": "Hyena",
+            "description": "Mammals from the hyena family. Hyenas are carnivorous pack hunters with powerful necks and jaws."
+        },
+        "Ogre": {
+            "name": "Ogre",
+            "description": "<p>Hulking giantkin which are reknowned for their brute strength and direct problem-solving approach.</p>"
+        },
+        "Orc": {
+            "name": "Orc",
+            "description": "<p>Savage and warlike humanoids which generally form clan-like warbands. What Orcs lack in cunning they make up for with determination, grit, and prudent judgment.</p>"
+        },
+        "Skeleton": {
+            "name": "Skeleton",
+            "description": "<p>Undeathly denizens fashioned of bone and sinew.</p>"
+        },
+        "Storm Elemental": {
+            "name": "Storm Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Lightning.</p>"
+        },
+        "Werewolf": {
+            "name": "Werewolf",
+            "description": "<p>Lycanthropic shapeshifters who walk as men but take wolven form.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

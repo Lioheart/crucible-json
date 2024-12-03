@@ -1,0 +1,367 @@
+{
+    "label": "Pregens",
+    "folders": {
+        "Level 1": "Level 1",
+        "Level 6": "Level 6"
+    },
+    "entries": {
+        "Agnath": {
+            "name": "Agnath"
+        },
+        "Arcane Archer": {
+            "name": "Arcane Archer"
+        },
+        "Arcane Orb": {
+            "name": "Arcane Orb"
+        },
+        "Archery Training": {
+            "name": "Archery Training"
+        },
+        "Armored Efficiency": {
+            "name": "Armored Efficiency"
+        },
+        "Belladonna": {
+            "name": "Belladonna"
+        },
+        "Berserker": {
+            "name": "Berserker"
+        },
+        "Blood Frenzy": {
+            "name": "Blood Frenzy"
+        },
+        "Bloodletter": {
+            "name": "Bloodletter"
+        },
+        "Bulwark": {
+            "name": "Bulwark"
+        },
+        "Cadence": {
+            "name": "Cadence"
+        },
+        "Clarify Intent": {
+            "name": "Clarify Intent"
+        },
+        "Cleave": {
+            "name": "Cleave"
+        },
+        "Combat Medicine": {
+            "name": "Combat Medicine"
+        },
+        "Concussive Blows": {
+            "name": "Concussive Blows"
+        },
+        "Conjurer": {
+            "name": "Conjurer"
+        },
+        "Conserve Effort": {
+            "name": "Conserve Effort"
+        },
+        "Counter Evade": {
+            "name": "Counter Evade"
+        },
+        "Counter Strike": {
+            "name": "Counter Strike"
+        },
+        "Dagger": {
+            "name": "Dagger"
+        },
+        "Diversionist": {
+            "name": "Diversionist"
+        },
+        "Dread Lord": {
+            "name": "Dread Lord"
+        },
+        "Dual Wield": {
+            "name": "Dual Wield"
+        },
+        "Duurath": {
+            "name": "Duurath"
+        },
+        "Eliorwen": {
+            "name": "Eliorwen"
+        },
+        "Executioner's Strike": {
+            "name": "Executioner's Strike"
+        },
+        "Fan of Arrows": {
+            "name": "Fan of Arrows"
+        },
+        "Ferocious Leap": {
+            "name": "Ferocious Leap"
+        },
+        "Fine Arcane Orb": {
+            "name": "Fine Arcane Orb"
+        },
+        "Fine Dagger": {
+            "name": "Fine Dagger"
+        },
+        "Fine Greataxe": {
+            "name": "Fine Greataxe"
+        },
+        "Fine Greatsword": {
+            "name": "Fine Greatsword"
+        },
+        "Fine Heater Shield": {
+            "name": "Fine Heater Shield"
+        },
+        "Fine Longbow": {
+            "name": "Fine Longbow"
+        },
+        "Fine Mage Staff": {
+            "name": "Fine Mage Staff"
+        },
+        "Fine Ring Mail": {
+            "name": "Fine Ring Mail"
+        },
+        "Fine Scale Mail": {
+            "name": "Fine Scale Mail"
+        },
+        "Fine Shortsword": {
+            "name": "Fine Shortsword"
+        },
+        "Fine Splint Mail": {
+            "name": "Fine Splint Mail"
+        },
+        "Fine Studded Leather Armor": {
+            "name": "Fine Studded Leather Armor"
+        },
+        "Fine War Hammer": {
+            "name": "Fine War Hammer"
+        },
+        "Finesse Weapon Training": {
+            "name": "Finesse Weapon Training"
+        },
+        "Fizzit": {
+            "name": "Fizzit"
+        },
+        "Flurry": {
+            "name": "Flurry"
+        },
+        "Gesture: Arrow": {
+            "name": "Gesture: Arrow"
+        },
+        "Gesture: Create": {
+            "name": "Gesture: Create"
+        },
+        "Gesture: Influence": {
+            "name": "Gesture: Influence"
+        },
+        "Gesture: Pulse": {
+            "name": "Gesture: Pulse"
+        },
+        "Gesture: Ray": {
+            "name": "Gesture: Ray"
+        },
+        "Gesture: Strike": {
+            "name": "Gesture: Strike"
+        },
+        "Gesture: Ward": {
+            "name": "Gesture: Ward"
+        },
+        "Greataxe": {
+            "name": "Greataxe"
+        },
+        "Greatsword": {
+            "name": "Greatsword"
+        },
+        "Healer": {
+            "name": "Healer"
+        },
+        "Heater Shield": {
+            "name": "Heater Shield"
+        },
+        "Hold Fast": {
+            "name": "Hold Fast"
+        },
+        "Impetus": {
+            "name": "Impetus"
+        },
+        "Inflection: Compose": {
+            "name": "Inflection: Compose"
+        },
+        "Inflection: Quicken": {
+            "name": "Inflection: Quicken"
+        },
+        "Inspire Heroism": {
+            "name": "Inspire Heroism"
+        },
+        "Intellectual Superiority": {
+            "name": "Intellectual Superiority"
+        },
+        "Intimidator": {
+            "name": "Intimidator"
+        },
+        "Intuit Weakness": {
+            "name": "Intuit Weakness"
+        },
+        "Iramancer": {
+            "name": "Iramancer"
+        },
+        "Kagura": {
+            "name": "Kagura"
+        },
+        "Katana": {
+            "name": "Katana"
+        },
+        "Lesser Regeneration": {
+            "name": "Lesser Regeneration"
+        },
+        "Longbow": {
+            "name": "Longbow"
+        },
+        "Mage Staff": {
+            "name": "Mage Staff"
+        },
+        "Mark Prey": {
+            "name": "Mark Prey"
+        },
+        "Martial Weapon Training": {
+            "name": "Martial Weapon Training"
+        },
+        "Mender": {
+            "name": "Mender"
+        },
+        "Necromancer": {
+            "name": "Necromancer"
+        },
+        "Operator": {
+            "name": "Operator"
+        },
+        "Opportunistic Spellcraft": {
+            "name": "Opportunistic Spellcraft"
+        },
+        "Perspicacity": {
+            "name": "Perspicacity"
+        },
+        "Planned Defense": {
+            "name": "Planned Defense"
+        },
+        "Poisoner": {
+            "name": "Poisoner"
+        },
+        "Powerful Physique": {
+            "name": "Powerful Physique"
+        },
+        "Precision Shot": {
+            "name": "Precision Shot"
+        },
+        "Preternatural Instinct": {
+            "name": "Preternatural Instinct"
+        },
+        "Pyromancer": {
+            "name": "Pyromancer"
+        },
+        "Rapier": {
+            "name": "Rapier"
+        },
+        "Rimecaller": {
+            "name": "Rimecaller"
+        },
+        "Ring Mail": {
+            "name": "Ring Mail"
+        },
+        "Rune: Death": {
+            "name": "Rune: Death"
+        },
+        "Rune: Earth": {
+            "name": "Rune: Earth"
+        },
+        "Rune: Flame": {
+            "name": "Rune: Flame"
+        },
+        "Rune: Frost": {
+            "name": "Rune: Frost"
+        },
+        "Rune: Kinesis": {
+            "name": "Rune: Kinesis"
+        },
+        "Rune: Life": {
+            "name": "Rune: Life"
+        },
+        "Rune: Lightning": {
+            "name": "Rune: Lightning"
+        },
+        "Rune: Spirit": {
+            "name": "Rune: Spirit"
+        },
+        "Runewarden": {
+            "name": "Runewarden"
+        },
+        "Scale Mail": {
+            "name": "Scale Mail"
+        },
+        "Scimitar": {
+            "name": "Scimitar"
+        },
+        "Second Wind": {
+            "name": "Second Wind"
+        },
+        "Shield Charge": {
+            "name": "Shield Charge"
+        },
+        "Shortsword": {
+            "name": "Shortsword"
+        },
+        "Skirmisher": {
+            "name": "Skirmisher"
+        },
+        "Soothe": {
+            "name": "Soothe"
+        },
+        "Spellblade": {
+            "name": "Spellblade"
+        },
+        "Splint Mail": {
+            "name": "Splint Mail"
+        },
+        "Steadfast": {
+            "name": "Steadfast"
+        },
+        "Strike First": {
+            "name": "Strike First"
+        },
+        "Strong Grip": {
+            "name": "Strong Grip"
+        },
+        "Studded Leather Armor": {
+            "name": "Studded Leather Armor"
+        },
+        "Subtle Extrication": {
+            "name": "Subtle Extrication"
+        },
+        "Surgeweaver": {
+            "name": "Surgeweaver"
+        },
+        "Thick Skin": {
+            "name": "Thick Skin"
+        },
+        "True Grit": {
+            "name": "True Grit"
+        },
+        "Tumble Through": {
+            "name": "Tumble Through"
+        },
+        "Ulfen": {
+            "name": "Ulfen"
+        },
+        "Unshakeable Stance": {
+            "name": "Unshakeable Stance"
+        },
+        "Uppercut": {
+            "name": "Uppercut"
+        },
+        "War Hammer": {
+            "name": "War Hammer"
+        },
+        "War Mage": {
+            "name": "War Mage"
+        },
+        "Weak Points": {
+            "name": "Weak Points"
+        },
+        "Zarajah": {
+            "name": "Zarajah"
+        }
+    },
+    "mapping": {}
+}

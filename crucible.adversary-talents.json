@@ -1,0 +1,17 @@
+{
+    "label": "Adversary-Talents",
+    "folders": {},
+    "entries": {
+        "Pack Hunter": {
+            "name": "Pack Hunter",
+            "description": "<p>The Hyena is a pack hunter, relying on its allies to flank and harrass a target to render it exposed to further harm.</p><p>This creature adds one additional Boon to all melee attacks against a target that is <strong>Flanked</strong>.</p>"
+        },
+        "Tusk Charge": {
+            "name": "Tusk Charge",
+            "description": "The Boar lowers its head and charges with frantic speed, it's tusks protruding from beneath a drooling gullet."
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

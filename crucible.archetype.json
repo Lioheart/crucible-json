@@ -1,0 +1,53 @@
+{
+    "label": "Archetype",
+    "folders": {
+        "Humanoids": "Humanoids",
+        "Beasts": "Beasts",
+        "Summons": "Summons"
+    },
+    "entries": {
+        "Archer": {
+            "name": "Archer",
+            "description": "Ranged combatants with training is the use of bows."
+        },
+        "Berserker": {
+            "name": "Berserker",
+            "description": "A rage-fueled warrior which prefers two-handed attacks using Heavy weapons."
+        },
+        "Creation": {
+            "name": "Creation",
+            "description": "<p>A magically fashioned and conjured creation corresponding to a particular arcane essence.</p>"
+        },
+        "Fighter": {
+            "name": "Fighter",
+            "description": "Hardened melee combatants expert at weilding one-handed weaponry, shield, and heavy armor."
+        },
+        "Grappler": {
+            "name": "Grappler",
+            "description": "Fighters who specialize in physically restraining their adversaries and rendering them susceptible to further attacks."
+        },
+        "Mage": {
+            "name": "Mage",
+            "description": "A magic user which wields flame and electricity in battle."
+        },
+        "Occultist": {
+            "name": "Occultist",
+            "description": "Magic users who practice spellcraft using otherworldly and eldritch forces."
+        },
+        "Pack Member": {
+            "name": "Pack Member",
+            "description": "Beasts that hunt in packs."
+        },
+        "Skirmisher": {
+            "name": "Skirmisher",
+            "description": "A relentless and determined melee combatant that uses a mix of agility and power to subdue foes."
+        },
+        "Tusker": {
+            "name": "Tusker",
+            "description": "<p>Beasts that fight using their own mass, momentum, and sharpened tusks.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}
