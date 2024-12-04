@@ -7,5 +7,7 @@
             "description": "<p><em>The Ring of Valor</em> is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of escalating challenges.</p>"
         }
     },
-    "mapping": {}
+    "mapping": {
+        "description": "system.description"
+    }
 }

@@ -56,73 +56,7 @@
         },
         "Awareness": {
             "name": "Awareness",
-            "pages": {
-                "system": {
-            "skillId": "awareness",
-            "overview": "<p>Awareness is a measure of your skill in translating sensory input into useful information. A character with high Awareness is able to notice and interpret details that others might miss, and is able to quickly identify and react to threats.</p>\n<p>While anyone might overhear conversations happening in a crowded room, those who have trained their Awareness can narrow their focus to more cleanly distinguish between one conversation and another. Similarly, a character who has trained their awareness might notice that the angle of an open door suggests an ambush awaits inside, someone who has not might only notice the open door.</p>",
-            "ranks": {
-                "untrained": {
-                    "description": "You are able to spot obvious things about your environment, but important fine details may escape your notice."
-                },
-                "novice": {
-                    "description": "You have been trained in the basics of situational awareness, and are able to notice important details about your environment. You know to check for exits when you enter a room, and how to look for concealed weapons, hidden traps, and other threats. You know how to spot when you are being followed, and how to search for common hiding places."
-                },
-                "apprentice": {
-                    "description": "Small details only rarely escape your notice. You can discern between different conversations within a room, sift important details from the unimportant, and spy telltale signs of an ambush well in advance. You know how to identify less common hiding places, and identify the approach of others by the sound of their footsteps. You have learned to use reflective surfaces to watch behind you as you move, and how to rely on your peripheral vision to identify changes in your immediate surroundings."
-                },
-                "specialist": {
-                    "description": "Choose a specialization path for your Awareness training. You may choose either: Detective, Sentinel, or Prescient."
-                },
-                "adept": {
-                    "description": "You have honed your awareness to a fine edge. You are able to notice even the smallest details of your environment, and are able to quickly identify and react to dangers in your surroundings. Spotting hiding places is trivial for you, you are almost never taken by surprise, and even in a crowded room you are able to filter your senses to determine very specific details. Even slight changes in temperature or air flow rarely escape your notice."
-                },
-                "master": {
-                    "description": "You have perfected your Awareness by mastering your chosen specialization."
-                }
-            },
-            "paths": {
-                "path1": {
-                    "overview": "Detectives work toward perfecting their ability to identify very fine details left behind by the careless. Characters with a detective specialization are uniquely capable of using information gathered within a location to piece together how past events may have transpired. They are able to identify the identity of others who were previously within a location by identifying evidence of their passage, construct a timeline of events, and identify any objects which might be conspicuously absent.\n\nMaster level detectives are nearly incapable of ignoring clues within their surroundings. They can't help but to notice the fine details that others ignore. Wrinkles on the shirt of an NPC might indicate that they were recently in a fight, a smudge of dirt might indicate that someone had traveled a particular path, a small scuff on a particular object might indicate the identity of who recently handled it.",
-                    "ranks": {
-                        "specialist": {
-                            "description": "Specialization mechanics will be added in a later playtest."
-                        },
-                        "master": {
-                            "description": "Specialization mechanics will be added in a later playtest."
-                        }
-                    },
-                    "id": "detective",
-                    "name": "Detective"
-                },
-                "path2": {
-                    "overview": "Sentinels are trained to be aware of their surroundings at all times, and are able to notice even the slightest changes in their environment. They are very quick to note changes in their immediate environment, often first to notice ambushes, concealed weapons, hidden traps, and other threats. They are used to long hours standing watch, and are able to maintain a high level of alertness for extended periods of time.\n\nMaster Sentinels have trained themselves to maintain a state of hypervigilance by following a rotating pattern of focusing their attention on distant and close surroundings. They make for tireless and attentive guards, and rarely fall prey to ambushes or traps. A Master Sentinel can spot the shift of body weight that precedes an attack, the subtle signs of tampering that indicate the presence of a trap, and are known for having a near extra-sensory perceptive ability to detect the presence of others.",
-                    "ranks": {
-                        "specialist": {
-                            "description": "Specialization mechanics will be added in a later playtest."
-                        },
-                        "master": {
-                            "description": "Specialization mechanics will be added in a later playtest."
-                        }
-                    },
-                    "id": "sentinel",
-                    "name": "Sentinel"
-                },
-                "path3": {
-                    "overview": "Prescients focus their awareness training on the delicate art of identifying the patterns in the behavior of others. Given a little time to observe a subject, a prescient can predict where they may be at any particular time of day, how the subject will react to a given situation, and what their likely course of action will be.\n\nA Master Prescient is uniquely capable of predicting the actions of others and the way events will unfold. With almost supernatural precision, they may identify the factors which contribute to an upcoming event, predict the movements of specific targets or groups, and identify the places and times to best introduce a change in order to affect the outcome of events.",
-                    "ranks": {
-                        "specialist": {
-                            "description": "Specialization mechanics will be added in a later playtest."
-                        },
-                        "master": {
-                            "description": "Specialization mechanics will be added in a later playtest."
-                        }
-                    },
-                    "id": "prescient",
-                    "name": "Prescient"
-                }
-            }
-        }
-            }
+            "pages": {}
         },
         "Background": {
             "name": "Background",
