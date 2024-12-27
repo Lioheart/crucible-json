@@ -7,8 +7,7 @@
     },
     "entries": {
         "Brigandine": {
-            "name": "Brigandine",
-            "description": ""
+            "name": "Brigandine"
         },
         "Chain Mail": {
             "name": "Chain Mail",
@@ -18,36 +17,28 @@
             }
         },
         "Heavy Hides": {
-            "name": "Heavy Hides",
-            "description": ""
+            "name": "Heavy Hides"
         },
         "Leather Armor": {
-            "name": "Leather Armor",
-            "description": ""
+            "name": "Leather Armor"
         },
         "Padded Armor": {
-            "name": "Padded Armor",
-            "description": ""
+            "name": "Padded Armor"
         },
         "Plate Mail": {
-            "name": "Plate Mail",
-            "description": ""
+            "name": "Plate Mail"
         },
         "Ring Mail": {
-            "name": "Ring Mail",
-            "description": ""
+            "name": "Ring Mail"
         },
         "Scale Mail": {
-            "name": "Scale Mail",
-            "description": ""
+            "name": "Scale Mail"
         },
         "Splint Mail": {
-            "name": "Splint Mail",
-            "description": ""
+            "name": "Splint Mail"
         },
         "Studded Leather Armor": {
-            "name": "Studded Leather Armor",
-            "description": ""
+            "name": "Studded Leather Armor"
         }
     },
     "mapping": {

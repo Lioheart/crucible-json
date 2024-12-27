@@ -5,14 +5,6 @@
         "Getting Started": "Getting Started"
     },
     "entries": {
-        "Abilities": {
-            "name": "Abilities",
-            "pages": {}
-        },
-        "Actions": {
-            "name": "Actions",
-            "pages": {}
-        },
         "Adversaries": {
             "name": "Adversaries",
             "pages": {
@@ -29,42 +21,6 @@
                     "text": "<p><strong>Archetype</strong> defines the skills and combat style of an <strong>Adversary</strong> in Crucible. Each Archetype defines scaling weights for @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6.JournalEntryPage.RHCy135mF4EN1mWZ]{Abilities} and provides a set of @UUID[Compendium.crucible.rules.JournalEntry.veKSDiOWHLaF7Gok.JournalEntryPage.OmJNyYrgeaTwYE7L]{Talents} which are automatically applied to Adversaries of that Archetype.</p><section class=\"gameplay\"><h4>Example: Fighter Archetype</h4><p>Hardened melee combatants expert at weilding one-handed weaponry, shield, and heavy armor.</p><p>The Fighter Archetype defines scaling weights such that emphasize faster progression of Strength and Toughness, normal progression of Presence and Dexterity, and slower progression of Wisdom and Intellect.</p><p>Furthermore, the Fighter Archetype provides the <strong>Martial Weapon Training</strong>, <strong>Bulwark</strong>, and <strong>Armored Efficiency</strong> talents.</p></section><p>Many different Adversaries will use the same Archetype. For example a Level 2 <strong>Bandit Fighter</strong>, a Level 4 <strong>Hobgoblin Fighter</strong>, and a Level 7 <strong>Hellguard</strong> all share the Fighter Archetype, but they each have different Taxonomies and therefore have different attributes and talents, but all share a common aspect of progression due to the Fighter Archetype.</p>"
                 }
             }
-        },
-        "Ancestry": {
-            "name": "Ancestry",
-            "pages": {}
-        },
-        "Arcana": {
-            "name": "Arcana",
-            "pages": {}
-        },
-        "Archetype": {
-            "name": "Archetype",
-            "pages": {}
-        },
-        "Armor": {
-            "name": "Armor",
-            "pages": {}
-        },
-        "Athletics": {
-            "name": "Athletics",
-            "pages": {}
-        },
-        "Attack Rolls": {
-            "name": "Attack Rolls",
-            "pages": {}
-        },
-        "Awareness": {
-            "name": "Awareness",
-            "pages": {}
-        },
-        "Background": {
-            "name": "Background",
-            "pages": {}
-        },
-        "Boons and Banes": {
-            "name": "Boons and Banes",
-            "pages": {}
         },
         "Character Creation": {
             "name": "Character Creation",
@@ -144,50 +100,6 @@
                 }
             }
         },
-        "Concealment and Surprise": {
-            "name": "Concealment and Surprise",
-            "pages": {}
-        },
-        "Conditions": {
-            "name": "Conditions",
-            "pages": {}
-        },
-        "Countermagic": {
-            "name": "Countermagic",
-            "pages": {}
-        },
-        "Cover": {
-            "name": "Cover",
-            "pages": {}
-        },
-        "Credits": {
-            "name": "Credits",
-            "pages": {}
-        },
-        "Deception": {
-            "name": "Deception",
-            "pages": {}
-        },
-        "Defenses": {
-            "name": "Defenses",
-            "pages": {}
-        },
-        "Dice Mechanics": {
-            "name": "Dice Mechanics",
-            "pages": {}
-        },
-        "Dice So Nice": {
-            "name": "Dice So Nice",
-            "pages": {}
-        },
-        "Diplomacy": {
-            "name": "Diplomacy",
-            "pages": {}
-        },
-        "Engagement and Flanking": {
-            "name": "Engagement and Flanking",
-            "pages": {}
-        },
         "Equipment": {
             "name": "Equipment",
             "pages": {
@@ -205,42 +117,6 @@
                 }
             }
         },
-        "Equipment Overview": {
-            "name": "Equipment Overview",
-            "pages": {}
-        },
-        "Gestures": {
-            "name": "Gestures",
-            "pages": {}
-        },
-        "Iconic Spells": {
-            "name": "Iconic Spells",
-            "pages": {}
-        },
-        "Inflections": {
-            "name": "Inflections",
-            "pages": {}
-        },
-        "Initiative and Turn Order": {
-            "name": "Initiative and Turn Order",
-            "pages": {}
-        },
-        "Intimidation": {
-            "name": "Intimidation",
-            "pages": {}
-        },
-        "Level Advancement": {
-            "name": "Level Advancement",
-            "pages": {}
-        },
-        "License": {
-            "name": "License",
-            "pages": {}
-        },
-        "Medicine": {
-            "name": "Medicine",
-            "pages": {}
-        },
         "Module Integrations": {
             "name": "Module Integrations",
             "pages": {
@@ -257,54 +133,6 @@
                     "text": "<p>As with any game system in Foundry Virtual Tabletop, Modules can enhance and augment the quality of gameplay experience. We do, however, request that testers of the initial Crucible Playtest try out the game system in a module-light environment in order to ensure that your experience and your feedback is appropriate and specific to the functionality of the Crucible system. Your playtest feedback will be more useful to us if you have fewer modules installed.</p>"
                 }
             }
-        },
-        "Modules in General": {
-            "name": "Modules in General",
-            "pages": {}
-        },
-        "Movement": {
-            "name": "Movement",
-            "pages": {}
-        },
-        "Overview": {
-            "name": "Overview",
-            "pages": {}
-        },
-        "Performance": {
-            "name": "Performance",
-            "pages": {}
-        },
-        "Providing Feedback": {
-            "name": "Providing Feedback",
-            "pages": {}
-        },
-        "Reactions": {
-            "name": "Reactions",
-            "pages": {}
-        },
-        "Resistances": {
-            "name": "Resistances",
-            "pages": {}
-        },
-        "Resources": {
-            "name": "Resources",
-            "pages": {}
-        },
-        "Runes": {
-            "name": "Runes",
-            "pages": {}
-        },
-        "Science": {
-            "name": "Science",
-            "pages": {}
-        },
-        "Sequencer and JB2A": {
-            "name": "Sequencer and JB2A",
-            "pages": {}
-        },
-        "Skill Attacks": {
-            "name": "Skill Attacks",
-            "pages": {}
         },
         "Skills": {
             "name": "Skills",
@@ -351,14 +179,6 @@
                 }
             }
         },
-        "Skills Overview": {
-            "name": "Skills Overview",
-            "pages": {}
-        },
-        "Society": {
-            "name": "Society",
-            "pages": {}
-        },
         "Spellcraft": {
             "name": "Spellcraft",
             "pages": {
@@ -388,22 +208,6 @@
                 }
             }
         },
-        "Spellcraft Overview": {
-            "name": "Spellcraft Overview",
-            "pages": {}
-        },
-        "Stealth": {
-            "name": "Stealth",
-            "pages": {}
-        },
-        "System Cornerstones": {
-            "name": "System Cornerstones",
-            "pages": {}
-        },
-        "Talent Tree Overview": {
-            "name": "Talent Tree Overview",
-            "pages": {}
-        },
         "Talents": {
             "name": "Talents",
             "pages": {
@@ -412,14 +216,6 @@
                     "text": "<p>Talents represent unique combinations of abilities a particular character may have, and provide a level of customization and progression beyond skill advancement. Talents allow characters to define their role more clearly as they advance, growing steadily in power. Newly created characters begin with a small number of Talent Points, gaining more points at each level.</p><p>You can access the Talent Tree for a character at any time by opening the Talents tab and clicking the \"Open Talent Tree\" button.</p><section class=\"foundryvtt\"><p>Interaction with the talent tree is similar to interaction with Scenes in ordinary Foundry VTT usage. Pan the tree using right-click and drag, and use mouse-wheel to zoom in and out. Left clicking any Node will expand it to reveal the Talents it may contain.</p><p>Left-clicking a Talent purchases that talent if you have points available, while right-clicking it will remove that talent from your character.</p><p>You may reset your purchases on the Talent Tree at any time by clicking the Reset button at the bottom.</p></section><h2 class=\"divider\">Tree Layout</h2><p>Crucible's Talent Tree is divided into six sections, with each section representing a different @UUID[Compendium.crucible.rules.JournalEntry.gszlBVQ5fGh3y0I6.JournalEntryPage.RHCy135mF4EN1mWZ]{Ability} which affects scaling and other aspects of those talents.</p><figure><img class=\"noborder\" src=\"systems/crucible/assets/journals/talent-explainer.webp\" /><figcaption>The Talent Tree is divided into sextants based on Abilities</figcaption></figure><p>The Talent Tree is composed of several subcomponents which help you plot growth and progression for your character.</p><h2 class=\"divider\">Nodes</h2><p>Each sextant of the Talent tree is composed of a number of <strong>Nodes</strong> which can contain one or more <strong>Talents</strong>. A Node which lie closer to the border between two sextants will often feature abilities which relate to the themes of both ability scores.</p><p>Starting Nodes occur at the inner-most ring, and contain talents that are often prerequisites for later talents in the tree. These starter talents are best thought of as the first steps in defining what makes your character different from another in terms of their specific set of special abilities.</p><h2 class=\"divider\">Talents</h2><p>Talents are the smallest unit of the talent tree. Each talent grants your character-specific abilities or bonuses. Many Talents have requirements which must be met before they can be purchased, such as attaining a certain level of Ability bonus or degree of training in a Skill.</p><h2 class=\"divider\">Signature Talents</h2><p>Talent nodes at the outer edges of the Talent Tree contain <strong>Signature Talents</strong>, powerful bonuses that \"Spellblade\" or \"Dread Lord\" which offer iconic abilities. Signature Talents represent the culmination of the abilities required to select them, and are mirrored across two ability scores. Taking a Signature Talent forms a bridge to its paired ability score, allowing you to continue your path of progression into that sextant regardless of whether you have already purchased lower-tier Talents.</p>"
                 }
             }
-        },
-        "Taxonomy": {
-            "name": "Taxonomy",
-            "pages": {}
-        },
-        "Weapons": {
-            "name": "Weapons",
-            "pages": {}
         },
         "Welcome To Crucible": {
             "name": "Welcome To Crucible",
@@ -448,15 +244,6 @@
                     "text": "<p>At the time of this playtest, Crucible is being released exclusively to a select group of Foundry Virtual Tabletop users including our Patreon membership and a number of hand-picked users from our community.</p><p>During these initial playtests, Crucible does not provide a license which can be used to create third party content or to modify the system or its rules.</p><p>It is our intent in the future to provide a favourable license which others may use both for creating addons and third-party content that they may share for both commercial and non-commercial purposes. The codebase for the system will be a separate license from the license for producing content using the system.</p>"
                 }
             }
-        },
-        "What is Crucible": {
-            "name": "What is Crucible",
-            "pages": {}
-        },
-        "Wilderness": {
-            "name": "Wilderness",
-            "pages": {}
         }
-    },
-    "mapping": {}
+    }
 }
