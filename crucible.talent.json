@@ -42,11 +42,30 @@
     "entries": {
         "Alchemical Resolve": {
             "name": "Alchemical Resolve",
-            "description": "You rapidly apply alchemical vapours which instill your ally with supplemental bravery in the face of horror."
+            "description": "You rapidly apply alchemical vapours which instill your ally with supplemental bravery in the face of horror.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Alchemical Resolve": {
+                        "name": "Alchemical Resolve",
+                        "description": "<p>You rapidly bolster the Morale of an ally within 4 feet by applying vapours. Perform a <strong>Medicine Check</strong> against the target's Madness Threshold. Successful checks restore Morale.</p>"
+                    }
+                }
+            }
         },
         "Anticipate Harm": {
             "name": "Anticipate Harm",
-            "description": "Your keen reflexes and acuity allow you to anticipate imminent danger and react to avoid it."
+            "description": "Your keen reflexes and acuity allow you to anticipate imminent danger and react to avoid it.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Anticipate Harm": {
+                        "name": "Anticipate Harm",
+                        "condition": "You are targeted by an area-of-effect attack, the source of which you can see.",
+                        "description": "You may immediately Move 1 space after the area-of-effect of the attack is declared. If this movement escapes the area of the attack, you are unaffected."
+                    }
+                }
+            }
         },
         "Arcane Archer": {
             "name": "Arcane Archer",
@@ -62,19 +81,58 @@
         },
         "Artful Parry": {
             "name": "Artful Parry",
-            "description": "<p>You anticipate dodging an attack, intercepting it to intentionally Parry the strike.</p><p></p>"
+            "description": "<p>You anticipate dodging an attack, intercepting it to intentionally Parry the strike.</p><p></p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Artful Parry": {
+                        "name": "Artful Parry",
+                        "condition": "You Dodge an incoming melee Strike.",
+                        "description": "<p>When you defend against a melee attack using the <strong>Dodge</strong> defense, you can react and expend <strong>Focus</strong> to instead <strong>Parry</strong> the attack.</p>"
+                    }
+                }
+            }
         },
         "Assassin": {
             "name": "Assassin",
-            "description": "<p>You specialize in bringing death the the unwary. Any Strike or Spell attack against an <strong>Unaware</strong> target becomes <strong>Deadly</strong>.</p><p>An Unaware creature hit by your attack may not alert its allies until its own turn in Combat.</p>"
+            "description": "<p>You specialize in bringing death the the unwary. Any Strike or Spell attack against an <strong>Unaware</strong> target becomes <strong>Deadly</strong>.</p><p>An Unaware creature hit by your attack may not alert its allies until its own turn in Combat.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Mark For Death": {
+                        "name": "Mark For Death",
+                        "condition": "You are unobserved.",
+                        "description": "You spend 1 minute studying a creature. Perform a Knowledge Test about your target. If successful, you learn all damage types against which the target is Vulnerable. Your minimum Initiative during the first round of Combat becomes one greater than the Initiative of your marked target.</p>"
+                    }
+                }
+            }
         },
         "Assess Strength": {
             "name": "Assess Strength",
-            "description": "<p>You take a moment to observe a creature which you can see and develop intuition about its areas of strength.</p>\n<p>Perform a <strong>Knowledge Test</strong> using a Skill chosen by the Gamemaster. On a success, you learn which Defense type of Physical, Fortutude, Willpower, or Reflex is highest for the creature. On a Critical Success you learn the two highest defense types.</p>"
+            "description": "<p>You take a moment to observe a creature which you can see and develop intuition about its areas of strength.</p>\n<p>Perform a <strong>Knowledge Test</strong> using a Skill chosen by the Gamemaster. On a success, you learn which Defense type of Physical, Fortutude, Willpower, or Reflex is highest for the creature. On a Critical Success you learn the two highest defense types.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Assess Strength": {
+                        "name": "Assess Strength",
+                        "description": "You observe a creature you can see to assess it's notable areas of strength."
+                    }
+                }
+            }
         },
         "Backstab": {
             "name": "Backstab",
-            "description": "<p>You focus your cunning instincts on exploiting the weak points of a flanked target. You identify an opportunity and strike with deadly efficiency.</p>"
+            "description": "<p>You focus your cunning instincts on exploiting the weak points of a flanked target. You identify an opportunity and strike with deadly efficiency.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Backstab": {
+                        "name": "Backstab",
+                        "condition": "You are attacking a target with the Flanked condition.",
+                        "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a <strong>Flanked</strong> target, dealing <strong>Deadly</strong> damage.</p>"
+                    }
+                }
+            }
         },
         "Battle Focus": {
             "name": "Battle Focus",
@@ -86,7 +144,22 @@
         },
         "Berserker": {
             "name": "Berserker",
-            "description": "<p>You revel in the thrill of combat, hurling yourself into the fray with reckless abandon.</p>"
+            "description": "<p>You revel in the thrill of combat, hurling yourself into the fray with reckless abandon.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Berserker Rage": {
+                        "name": "Berserker Rage",
+                        "condition": "You have suffered damage to your Health pool since your last turn in Combat.",
+                        "description": "You become Enraged. While Enraged you deal 4 additional damage on all melee attacks. You may attempt to end the effect on your own turn by succeeding on a Willpower test against a DC of 20. The effect ends automatically when Combat is concluded.",
+                        "effects": [
+                            {
+                                "name": "Berserker Rage"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Blood Frenzy": {
             "name": "Blood Frenzy",
@@ -102,11 +175,35 @@
         },
         "Body Block": {
             "name": "Body Block",
-            "description": "You lean into an attack which was otherwise defended with your Armor, converting its result into a Block instead."
+            "description": "You lean into an attack which was otherwise defended with your Armor, converting its result into a Block instead.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Body Block": {
+                        "name": "Body Block",
+                        "condition": "You defend against a melee attack with your Armor or as a Glance.",
+                        "description": "An attack which otherwise is defended by your Armor or produced a Glancing blow is converted to a Block and deals no damage."
+                    }
+                }
+            }
         },
         "Bull Rush": {
             "name": "Bull Rush",
-            "description": "You can use your physical prowess to push past opponents who block your path."
+            "description": "You can use your physical prowess to push past opponents who block your path.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Bull Rush": {
+                        "name": "Bull Rush",
+                        "description": "<p>Make a Pathfinding skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked Prone and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
+                        "effects": [
+                            {
+                                "name": "Bull Rush"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Bulwark": {
             "name": "Bulwark",
@@ -122,15 +219,47 @@
         },
         "Clarify Intent": {
             "name": "Clarify Intent",
-            "description": "You use apply your situational awareness and persuasiveness to rapidly communicate a plan of action to an ally."
+            "description": "You use apply your situational awareness and persuasiveness to rapidly communicate a plan of action to an ally.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Clarify Intent": {
+                        "name": "Clarify Intent",
+                        "description": "You explain your intentions to an ally within 3 spaces. Make an <strong>Diplomacy</strong> skill attack against your ally's Madness Threshold. If successful they gain +1 <strong>Focus</strong> and +1 <strong>Boon</strong> to actions made within the next Round.",
+                        "effects": [
+                            {
+                                "name": "Clarify Intent"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Cleave": {
             "name": "Cleave",
-            "description": "This martial technique is a specialized two-handed fighting maneuver which relies upon brute strength to swing your weapon in a wide arc, hitting multiple enemies in its path."
+            "description": "This martial technique is a specialized two-handed fighting maneuver which relies upon brute strength to swing your weapon in a wide arc, hitting multiple enemies in its path.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Cleave": {
+                        "name": "Cleave",
+                        "description": "<p>A ferocious two-handed swing cleaves through foes in a 120 degree arc.</p>"
+                    }
+                }
+            }
         },
         "Combat Medicine": {
             "name": "Combat Medicine",
-            "description": "Your knowledge and skill in Medicine covers the rapid triage, diagnosis, and treatment of wounds."
+            "description": "Your knowledge and skill in Medicine covers the rapid triage, diagnosis, and treatment of wounds.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Combat Medicine": {
+                        "name": "Combat Medicine",
+                        "description": "<p>You rapidly treat the wounds of an ally within 4 feet. Perform a <strong>Medicine Check</strong> against the target's Wounds Threshold. Your ally's Health is increased by the amount of the Roll in excess of the threshold.</p>"
+                    }
+                }
+            }
         },
         "Concussive Blows": {
             "name": "Concussive Blows",
@@ -146,35 +275,117 @@
         },
         "Counter Evade": {
             "name": "Counter Evade",
-            "description": "<p>You are practiced in evasive fighting styles which use an enemy's missed attack to devise an opening to counter-attack.</p>"
+            "description": "<p>You are practiced in evasive fighting styles which use an enemy's missed attack to devise an opening to counter-attack.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Counter Evade": {
+                        "name": "Counter Evade",
+                        "condition": "You Dodge an incoming melee Strike.",
+                        "description": "<p>When you defend against a melee attack with a <strong>Dodge</strong>, you may expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> using your mainhand weapon.</p>"
+                    }
+                }
+            }
         },
         "Counter Riposte": {
             "name": "Counter Riposte",
-            "description": "<p>You are expert in translating a parried attack into a swift counter against your exposed enemy.</p>"
+            "description": "<p>You are expert in translating a parried attack into a swift counter against your exposed enemy.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Counter Riposte": {
+                        "name": "Counter Riposte",
+                        "condition": "You Parry an incoming melee Strike.",
+                        "description": "<p>When you defend against a melee attack with a <strong>Parry</strong>, you may react and expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> which benefits from the <strong>Exposed</strong> condition.</p>"
+                    }
+                }
+            }
         },
         "Counter Spell": {
             "name": "Counter Spell",
-            "description": "<p>You can attempt to unravel and negate the spellcraft of other mages.</p>\n<section class=\"construction\">\n<p>Counter-Spell mechanics are preliminary and not implemented in Playtest 1. You may test the <em>intention</em> of this talent by working with your GM, but this process will not be refined or automated until a later Playtest phase.</p>\n</section>"
+            "description": "<p>You can attempt to unravel and negate the spellcraft of other mages.</p>\n<section class=\"construction\">\n<p>Counter-Spell mechanics are preliminary and not implemented in Playtest 1. You may test the <em>intention</em> of this talent by working with your GM, but this process will not be refined or automated until a later Playtest phase.</p>\n</section>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Counter Spell": {
+                        "name": "Counter Spell",
+                        "condition": "Another creature which you can see is casting a spell.",
+                        "description": "You form arcane energy into a countervailing spellcraft. Designate a Rune and Gesture which you know to attempt to counter the spell. You must be able to hit your target with your chosen Gesture. Choosing a Rune which is opposed to the Rune being cast adds +3 Boons to your roll. Choosing the same Gesture as the one being cast adds +3 Boons to your roll. Perform an <strong>Opposed Test</strong> against the caster of the spell using the Ability, Skill, and Enchantment bonuses of the respective spells being cast. If your roll exceeds theirs, the spell is countered and its magic is nullified."
+                    }
+                }
+            }
         },
         "Counter Strike": {
             "name": "Counter Strike",
-            "description": "<p>You are trained to transition between defending with your shield and a swift counter-attack.</p>"
+            "description": "<p>You are trained to transition between defending with your shield and a swift counter-attack.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Counter Strike": {
+                        "name": "Counter Strike",
+                        "condition": "You Block an incoming melee Strike.",
+                        "description": "<p>When you defend against a melee attack with a <strong>Block</strong> you may expend <strong>Focus</strong> to retaliate with a reduced-cost <strong>Strike</strong> using your mainhand weapon.</p>"
+                    }
+                }
+            }
         },
         "Defensive Roll": {
             "name": "Defensive Roll",
-            "description": "<p>You are a nimble skirmisher, always in movement to stay one step ahead of your enemies in combat.</p>"
+            "description": "<p>You are a nimble skirmisher, always in movement to stay one step ahead of your enemies in combat.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Defensive Roll": {
+                        "name": "Defensive Roll",
+                        "condition": "You Dodge an incoming melee Strike.",
+                        "description": "<p>When you <strong>Dodge</strong> a melee attack you can expend <strong>Focus</strong> to leap into a defensive roll, moving up to your <strong>Size</strong> in any direction.</p>"
+                    }
+                }
+            }
         },
         "Dervish": {
             "name": "Dervish",
-            "description": "<p>You are specialized in fighting with two weapons. In combat you become a whirlwind of weapons, deadly to any foes who approach.</p>"
+            "description": "<p>You are specialized in fighting with two weapons. In combat you become a whirlwind of weapons, deadly to any foes who approach.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Whirlwind": {
+                        "name": "Whirlwind",
+                        "description": "<p>You become a cyclone of whirling weaponry, making <strong>Strike</strong> attacks with both weapons against every enemy within range.</p>"
+                    }
+                }
+            }
         },
         "Dirty Tricks": {
             "name": "Dirty Tricks",
-            "description": "You have pouches of sand and dust that you use to temporarily distract or blind an enemy."
+            "description": "You have pouches of sand and dust that you use to temporarily distract or blind an enemy.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Dirty Tricks": {
+                        "name": "Dirty Tricks",
+                        "description": "You fling debris into the eyes of an enemy. If the Strike is successful, they are Blinded until the end of their next Turn.",
+                        "effects": [
+                            {
+                                "name": "Dirty Tricks"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Disarming Strike": {
             "name": "Disarming Strike",
-            "description": "<p>A martial technique designed to disarm your opponent, forcing them to drop an object held in one of their hands.</p>"
+            "description": "<p>A martial technique designed to disarm your opponent, forcing them to drop an object held in one of their hands.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Disarming Strike": {
+                        "name": "Disarming Strike",
+                        "description": "<p>You make a <strong>Strike </strong>against a the <strong>Reflex</strong> defense of a single target. The technique is <strong>Difficult</strong> to perform and deals reduced damage. If successful, the target is forced to unqeuip a held item of your choosing that is not secured.</p><p><strong>TODO: Add automation for the Disarm effect.</strong></p>"
+                    }
+                }
+            }
         },
         "Distance Runner": {
             "name": "Distance Runner",
@@ -182,15 +393,47 @@
         },
         "Diversionist": {
             "name": "Diversionist",
-            "description": "<p>You specialize in using subterfuge to distract or trick your opponent during combat.</p>"
+            "description": "<p>You specialize in using subterfuge to distract or trick your opponent during combat.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Distract": {
+                        "name": "Distract",
+                        "description": "<p>You make a <strong>Deception</strong> based <strong>Skill Attack</strong> against the <strong>Willpower </strong>defense of a target within 30 feet which can see or hear you. On a success, the target loses <strong>1 Focus</strong>.</p>"
+                    }
+                }
+            }
         },
         "Dread Lord": {
             "name": "Dread Lord",
-            "description": "<p>You exude a terrible presence on the battlefield which tests the morale of nearby enemies that behold you, breaking the resolve of the weak-willed.</p>"
+            "description": "<p>You exude a terrible presence on the battlefield which tests the morale of nearby enemies that behold you, breaking the resolve of the weak-willed.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Formidable Presence": {
+                        "name": "Formidable Presence",
+                        "description": "You make an Intimidation skill attack against the Willpower defense of enemies within 3 spaces, dealing Void damage to Morale and causing the Frightened condition for 1 Round to those whose defense you overcome.",
+                        "effects": [
+                            {
+                                "name": "Formidable Presence"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Dual Wield": {
             "name": "Dual Wield",
-            "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>"
+            "description": "<p>You are adept at fighting with two weapons simultaneously. You can weave attacks together to strike more rapidly than possible with a single weapon.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Offhand Strike": {
+                        "name": "Offhand Strike",
+                        "description": "<p>Immediately after you perform a basic Strike with your mainhand weapon, you make a reduced-cost fullow-up <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p>"
+                    }
+                }
+            }
         },
         "Dustbinder": {
             "name": "Dustbinder",
@@ -202,11 +445,36 @@
         },
         "Executioner's Strike": {
             "name": "Executioner's Strike",
-            "description": "<p>You deliver a single decisive strike against a wounded enemy.</p>"
+            "description": "<p>You deliver a single decisive strike against a wounded enemy.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Executioner's Strike": {
+                        "name": "Executioner's Strike",
+                        "condition": "Your target is Bloodied.",
+                        "description": "<p>You deliver a Deadly Strike with a two-handed heavy weapon. If your attack is successful, your opponent also suffers the Bleeding condition for 3 Rounds, taking additional damage each Round equal to your Strength score.</p>",
+                        "effects": [
+                            {
+                                "name": "Executioner's Strike"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Extoll Deeds": {
             "name": "Extoll Deeds",
-            "description": "You inspire courage within your allies by extolling the heroic deeds of a companion. You may react by composing a verse, making a quip, or shouting a battle cry when an ally you can see <strong>Incapacitates</strong> or achieves a <strong>Critical Hit</strong> against an enemy creature. The celebration of these heroic deeds restores the Morale of your allies within 6 spaces."
+            "description": "You inspire courage within your allies by extolling the heroic deeds of a companion. You may react by composing a verse, making a quip, or shouting a battle cry when an ally you can see <strong>Incapacitates</strong> or achieves a <strong>Critical Hit</strong> against an enemy creature. The celebration of these heroic deeds restores the Morale of your allies within 6 spaces.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Extoll Deeds": {
+                        "name": "Extoll Deeds",
+                        "condition": "An ally whom you can see slays or scores a critical hit against an enemy.",
+                        "description": "<p>You compose a verse, make a quip, or shout a battle cry to extoll the heroic deeds of one of your allies. Make a <strong>Performance</strong> check against your allies' Madness threshold, restoring Morale to those who can perceive your performance.</p>"
+                    }
+                }
+            }
         },
         "Eye of the Storm": {
             "name": "Eye of the Storm",
@@ -214,15 +482,42 @@
         },
         "Fan of Arrows": {
             "name": "Fan of Arrows",
-            "description": "This difficult ranged weaponry technique allows you to fire a multiple shots with your weapon in a sweeping cone, each targeting a different enemy in the area of effect."
+            "description": "This difficult ranged weaponry technique allows you to fire a multiple shots with your weapon in a sweeping cone, each targeting a different enemy in the area of effect.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Fan of Arrows": {
+                        "name": "Fan of Arrows",
+                        "description": "<p>You fire multiple projectiles from your ranged weapon in an arc, striking all enemy targets within a 40 foot cone.</p>"
+                    }
+                }
+            }
         },
         "Feinting Strike": {
             "name": "Feinting Strike",
-            "description": "<p>A two-weapon technique which makes a feint with your primary weapon, exposing your target for an off-hand attack.</p>"
+            "description": "<p>A two-weapon technique which makes a feint with your primary weapon, exposing your target for an off-hand attack.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Feinting Strike": {
+                        "name": "Feinting Strike",
+                        "description": "<p>You feint with your mainhand weapon, making a <strong>Deception</strong> attack against the target's <strong>Reflex</strong> defense. You immediately make a <strong>Strike</strong> with your <strong>offhand</strong> weapon.</p><p>If your Deception was successful, you gain <strong>+2 Boons</strong> to your Strike and it deals an additional <strong>+6 Damage</strong>.</p>"
+                    }
+                }
+            }
         },
         "Ferocious Leap": {
             "name": "Ferocious Leap",
-            "description": "You leap powerfully into battle to deliver a punishing blow to a nearby enemy."
+            "description": "You leap powerfully into battle to deliver a punishing blow to a nearby enemy.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Ferocious Leap": {
+                        "name": "Ferocious Leap",
+                        "description": "<p>You leap up to 10 feet and perform a Strike against an enemy within melee range of where you land. Your movement ignores difficult terrain and is not blocked by enemy creatures.</p>"
+                    }
+                }
+            }
         },
         "Finesse Weapon Training": {
             "name": "Finesse Weapon Training",
@@ -230,11 +525,29 @@
         },
         "Flurry": {
             "name": "Flurry",
-            "description": "<p>A martial technique using two weapons to overwhelm a single target with a relentless sequence of attacks.</p>"
+            "description": "<p>A martial technique using two weapons to overwhelm a single target with a relentless sequence of attacks.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Flurry": {
+                        "name": "Flurry",
+                        "description": "<p>You <strong>Strike</strong> twice with each weapon, but each strike is <strong>Difficult</strong>.</p>"
+                    }
+                }
+            }
         },
         "Flying Kick": {
             "name": "Flying Kick",
-            "description": "An unarmed technique where you launch yourself while running at an enemy in a leaping kick which is empowered to deal additional damage."
+            "description": "An unarmed technique where you launch yourself while running at an enemy in a leaping kick which is empowered to deal additional damage.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Flying Kick": {
+                        "name": "Flying Kick",
+                        "description": "<p><strong>Move</strong> forward between 3 feet and 6 feet in a straight line to kick an enemy with an empowered <strong>Strike</strong>.</p>"
+                    }
+                }
+            }
         },
         "Focused Anticipation": {
             "name": "Focused Anticipation",
@@ -242,7 +555,17 @@
         },
         "Fulcrum": {
             "name": "Fulcrum",
-            "description": "<p>Balance, positioning, and leverage are your greatest allies in combat. You know how to use a foe's momentum against them and that a small redirection in force can turn the tide of battle.</p>"
+            "description": "<p>Balance, positioning, and leverage are your greatest allies in combat. You know how to use a foe's momentum against them and that a small redirection in force can turn the tide of battle.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Conserve Momentum": {
+                        "name": "Conserve Momentum",
+                        "condition": "You Block, Parry, or Dodge an incoming melee Strike.",
+                        "description": "You redirect the force of a melee attack which misses you, pivoting it to instead hit some other adjacent enemy. Your attacker must re-roll their attack targetting their ally instead."
+                    }
+                }
+            }
         },
         "Gesture: Arrow": {
             "name": "Gesture: Arrow",
@@ -290,15 +613,52 @@
         },
         "Hamstring": {
             "name": "Hamstring",
-            "description": "<p>You use a slashing weapon to target the legs of an enemy and cripple their movement.</p>"
+            "description": "<p>You use a slashing weapon to target the legs of an enemy and cripple their movement.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Hamstring": {
+                        "name": "Hamstring",
+                        "description": "<p>You make <strong>Strike</strong> attack which is <strong>Difficult</strong>, but if successful, inflicts the <strong>Slowed</strong> condition for <strong>3 Rounds</strong>.</p>",
+                        "effects": [
+                            {
+                                "name": "Hamstring"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Healer": {
             "name": "Healer",
-            "description": "<p>You are unparalleled at manipulating vital arcana to treat injuries. You learn <strong>Rune: Life</strong> if you do not already know it. When healing allies using the Rune of Life you gain <strong>+2 Boons</strong> to your roll.</p>"
+            "description": "<p>You are unparalleled at manipulating vital arcana to treat injuries. You learn <strong>Rune: Life</strong> if you do not already know it. When healing allies using the Rune of Life you gain <strong>+2 Boons</strong> to your roll.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Font of Life": {
+                        "name": "Font of Life",
+                        "description": "<p>You bring forth an aura of life-giving magic. Immediately upon activation and at the start of your turn for <strong>3 Rounds</strong> every ally within 20 feet heals for an amount equal to your <strong>Wisdom</strong> score.</p>",
+                        "effects": [
+                            {
+                                "name": "Font of Life"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Heavy Strike": {
             "name": "Heavy Strike",
-            "description": "<p>You know how to use a heavy weapon to deliver punishing blows, putting your entire strength behind every swing.</p>"
+            "description": "<p>You know how to use a heavy weapon to deliver punishing blows, putting your entire strength behind every swing.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Heavy Strike": {
+                        "name": "Heavy Strike",
+                        "description": "<p>You unleash a powerful <strong>Strike</strong> with your mainhand weapon. The attack is slower to execute, but is <strong>Empowered</strong> to deliver additional damage.</p>"
+                    }
+                }
+            }
         },
         "Hold Fast": {
             "name": "Hold Fast",
@@ -346,7 +706,17 @@
         },
         "Inquisitor": {
             "name": "Inquisitor",
-            "description": "<p>You are an expert in combat against magic users. You know how to conserve energy and strike at the precise moment to thwart their incantation.</p>"
+            "description": "<p>You are an expert in combat against magic users. You know how to conserve energy and strike at the precise moment to thwart their incantation.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Inquisitor's Strike": {
+                        "name": "Inquisitor's Strike",
+                        "condition": "Your target is casting a spell.",
+                        "description": "When an enemy within your Engagement radius whom you can see casts a spell, you may react to Strike that target. On a Critical Hit the target's spell is interrupted and the magic is lost."
+                    }
+                }
+            }
         },
         "Inspirator": {
             "name": "Inspirator",
@@ -354,7 +724,21 @@
         },
         "Inspire Heroism": {
             "name": "Inspire Heroism",
-            "description": "Your courageous presence inspires your nearby allies to strike with confidence."
+            "description": "Your courageous presence inspires your nearby allies to strike with confidence.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Inspire Heroism": {
+                        "name": "Inspire Heroism",
+                        "description": "<p>Each ally, excluding yourself, within <strong>10 Feet</strong> gains <strong>+1 Boon</strong> to actions performed until the end of their next Turn.</p>",
+                        "effects": [
+                            {
+                                "name": "Inspire Heroism"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Intellectual Superiority": {
             "name": "Intellectual Superiority",
@@ -362,15 +746,43 @@
         },
         "Intercept": {
             "name": "Intercept",
-            "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions."
+            "description": "You protect your allies, intercepting blows that might otherwise be directed towards your companions.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Intercept": {
+                        "name": "Intercept",
+                        "condition": "An enemy moves into or through your Engagement radius.",
+                        "description": "<p>You intercept the path of an enemy which enters your <strong>Engagement</strong> radius, immediatly moving up to your <strong>Stride</strong> to interpose yourself and block their path.</p><p>If the enemy moves out of your Engagement radius or attacks any other creature during their turn, you may make a <strong>Disengagement Strike</strong> against them.</p>"
+                    }
+                }
+            }
         },
         "Intimidator": {
             "name": "Intimidator",
-            "description": "You specialize in exerting your intimidating presence to break the morale of your foes."
+            "description": "You specialize in exerting your intimidating presence to break the morale of your foes.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Intimidate": {
+                        "name": "Intimidate",
+                        "description": "You physically intimidate an enemy that is within your engagement range, performing an Intimidation skill attack against your target. On a success they sustain Void damage to Morale."
+                    }
+                }
+            }
         },
         "Intuit Weakness": {
             "name": "Intuit Weakness",
-            "description": "You calm your mind and study the physiology of your foe, seeking a vulnerability in its defenses. The Gamemaster performs a passive <strong>Knowledge Test</strong> against the enemy. If successful you learn one Damage type that the creature is vulnerable to, if any."
+            "description": "You calm your mind and study the physiology of your foe, seeking a vulnerability in its defenses. The Gamemaster performs a passive <strong>Knowledge Test</strong> against the enemy. If successful you learn one Damage type that the creature is vulnerable to, if any.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Intuit Weakness": {
+                        "name": "Intuit Weakness",
+                        "description": "You still your mind and study the physiology of your foe, attempting to identify a vulnerability in its defenses."
+                    }
+                }
+            }
         },
         "Iramancer": {
             "name": "Iramancer",
@@ -386,7 +798,21 @@
         },
         "Leg Sweep": {
             "name": "Leg Sweep",
-            "description": "<p>You use a heavy weapon to sweep your enemy off balance, swinging low to knock them from their feet.</p>"
+            "description": "<p>You use a heavy weapon to sweep your enemy off balance, swinging low to knock them from their feet.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Leg Sweep": {
+                        "name": "Leg Sweep",
+                        "description": "<p>You make a <strong>Strike</strong> attack with your mainhand weapon. This technique is <strong>Difficult</strong> to execute and deals reduced damage, but if successful renders your target <strong>Prone</strong>.</p>",
+                        "effects": [
+                            {
+                                "name": "Leg Sweep"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Legerdemain": {
             "name": "Legerdemain",
@@ -402,11 +828,34 @@
         },
         "Lunge": {
             "name": "Lunge",
-            "description": "You dart forward nimbly, making a strike with sudden and unexpected swiftness."
+            "description": "You dart forward nimbly, making a strike with sudden and unexpected swiftness.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Lunge": {
+                        "name": "Lunge",
+                        "description": "<p>You <strong>Strike</strong> with your mainhand weapon against a single foe with an increased range of <strong>+2 feet</strong>. The attack is <strong>Difficult</strong>, but you do not move from your current position nor does this attack provoke any Disengagement.</p>"
+                    }
+                }
+            }
         },
         "Mark Prey": {
             "name": "Mark Prey",
-            "description": "You fire a special shot which deals reduced damage, but explodes in luminous powder clearly marking your target."
+            "description": "You fire a special shot which deals reduced damage, but explodes in luminous powder clearly marking your target.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Mark Prey": {
+                        "name": "Mark Prey",
+                        "description": "<p>You Strike using a special shot. If your attack is successful the target is <strong>Exposed</strong> for the next 3 Turns.</p>",
+                        "effects": [
+                            {
+                                "name": "Marked"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Martial Artist": {
             "name": "Martial Artist",
@@ -430,11 +879,29 @@
         },
         "Mnemonic Realization": {
             "name": "Mnemonic Realization",
-            "description": "<p>Your sharpened mind is full of secrets and techniques to remember them. Once per Day you may focus your thoughts and attempt to recall a word that sparks your memory.</p>\n<p>The Gamemaster must provide you with a one-word clue that is appropriate for your direction of inquiry. It is left to Gamemaster discretion how direct or vague to be with the clue they provide.</p>"
+            "description": "<p>Your sharpened mind is full of secrets and techniques to remember them. Once per Day you may focus your thoughts and attempt to recall a word that sparks your memory.</p>\n<p>The Gamemaster must provide you with a one-word clue that is appropriate for your direction of inquiry. It is left to Gamemaster discretion how direct or vague to be with the clue they provide.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Mnemonic Realization": {
+                        "name": "Mnemonic Realization",
+                        "description": "<p>You survey your memories attempting to recall a clue for your current situation.</p>"
+                    }
+                }
+            }
         },
         "Monk": {
             "name": "Monk",
-            "description": "<p>You balance monastic discipline with expertise in martial arts, balancing attack and defense in harmony.</p><p>While Unarmored, you gain a +2 bonus to your Reflex and Willpower defenses.</p><p>While Unarmed you can use the Double Punch action.</p>"
+            "description": "<p>You balance monastic discipline with expertise in martial arts, balancing attack and defense in harmony.</p><p>While Unarmored, you gain a +2 bonus to your Reflex and Willpower defenses.</p><p>While Unarmed you can use the Double Punch action.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Double Punch": {
+                        "name": "Double Punch",
+                        "description": "You Strike twice in the blink of an eye, punching with both arms."
+                    }
+                }
+            }
         },
         "Necromancer": {
             "name": "Necromancer",
@@ -442,7 +909,17 @@
         },
         "Nosferatu": {
             "name": "Nosferatu",
-            "description": "<p>You are afflicted with a rare blood mutation which allows your wounds to rapidly heal through hematophagy.</p><p>You can restore your Health by biting a living target. This attack is made with a Superior Natural weapon which scales using Strength and deals Piercing damage.</p><p>Your vulnerability to Radiant damage increases by 10.</p>"
+            "description": "<p>You are afflicted with a rare blood mutation which allows your wounds to rapidly heal through hematophagy.</p><p>You can restore your Health by biting a living target. This attack is made with a Superior Natural weapon which scales using Strength and deals Piercing damage.</p><p>Your vulnerability to Radiant damage increases by 10.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Vampiric Bite": {
+                        "name": "Vampiric Bite",
+                        "condition": "Your target is a living creature.",
+                        "description": "You grasp an enemy and bite it with sharp incisors, rapidly draining its blood to heal your own wounds. This attack requires a free hand to grasp your target while you feed."
+                    }
+                }
+            }
         },
         "Operator": {
             "name": "Operator",
@@ -458,7 +935,17 @@
         },
         "Overwatch": {
             "name": "Overwatch",
-            "description": "<p>You are an expert in combat against magic users. You know how to conserve energy and strike at the precise moment to thwart their incantation.</p>"
+            "description": "<p>You are an expert in combat against magic users. You know how to conserve energy and strike at the precise moment to thwart their incantation.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Disrupting Shot": {
+                        "name": "Disrupting Shot",
+                        "condition": "Your target is casting a spell.",
+                        "description": "When an enemy you can see casts a spell, you may react to Strike that target. The technique is difficult to perform, but on a Critical Hit the target's spell is interrupted and the magic is lost."
+                    }
+                }
+            }
         },
         "Patient Deflection": {
             "name": "Patient Deflection",
@@ -466,7 +953,16 @@
         },
         "Penetrating Shot": {
             "name": "Penetrating Shot",
-            "description": "You load special ammunition which deals less damage but penetrates directly through a line of targets."
+            "description": "You load special ammunition which deals less damage but penetrates directly through a line of targets.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Penetrating Shot": {
+                        "name": "Penetrating Shot",
+                        "description": "<p>You fire a shot which penetrates through multiple targets in a direct line.</p>"
+                    }
+                }
+            }
         },
         "Perspicacity": {
             "name": "Perspicacity",
@@ -474,11 +970,34 @@
         },
         "Pinning Shot": {
             "name": "Pinning Shot",
-            "description": "You fire a tactically placed shot to pin your target against a nearby surface."
+            "description": "You fire a tactically placed shot to pin your target against a nearby surface.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Pinning Shot": {
+                        "name": "Pinning Shot",
+                        "description": "<p>You <strong>Strike</strong> from distance. The attack is <strong>Difficult</strong>, however if your target is it it becomes <strong>Restrained</strong> until the end of their next Turn.</p>",
+                        "effects": [
+                            {
+                                "name": "Pinning Shot"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Pistoleer": {
             "name": "Pistoleer",
-            "description": "<p>Your familiarity with mechanical firearms is unmatched. You can perform the Reload action for free once per Round.</p>"
+            "description": "<p>Your familiarity with mechanical firearms is unmatched. You can perform the Reload action for free once per Round.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Salvo": {
+                        "name": "Salvo",
+                        "description": "You fire a barrage of attacks using a one-handed mechanical weapon, shooting three times at a target without the need to reload in-between shots."
+                    }
+                }
+            }
         },
         "Planned Defense": {
             "name": "Planned Defense",
@@ -486,7 +1005,21 @@
         },
         "Poisoner": {
             "name": "Poisoner",
-            "description": "<p>You can apply Poison to weapons which deal Slashing or Piercing damage. You deal an additional +2 damage whenever you deal Poison damage and your Strikes cause the <strong>Poisoned</strong> condition on Critical Strikes which deal damage to Health.</p>"
+            "description": "<p>You can apply Poison to weapons which deal Slashing or Piercing damage. You deal an additional +2 damage whenever you deal Poison damage and your Strikes cause the <strong>Poisoned</strong> condition on Critical Strikes which deal damage to Health.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Poison Blades": {
+                        "name": "Poison Blades",
+                        "description": "You nimbly lather your blades in toxic alchemical oils which apply the Poisoned condition on Critical Strikes.",
+                        "effects": [
+                            {
+                                "name": "Poison Blades"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Powerful Physique": {
             "name": "Powerful Physique",
@@ -498,7 +1031,16 @@
         },
         "Precision Shot": {
             "name": "Precision Shot",
-            "description": "You take time to steady your aim and target the weakest point of a foe. You may only get one shot, but you make it count."
+            "description": "You take time to steady your aim and target the weakest point of a foe. You may only get one shot, but you make it count.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Precision Shot": {
+                        "name": "Precision Shot",
+                        "description": "<p>You steady your aim and fire a single accurate shot.</p>"
+                    }
+                }
+            }
         },
         "Preparedness": {
             "name": "Preparedness",
@@ -510,7 +1052,22 @@
         },
         "Provocateur": {
             "name": "Provocateur",
-            "description": "You specialize in barbed repartee crafted to highlight your opponent's shortcomings. In combat you can launch quips which provoke your foes."
+            "description": "You specialize in barbed repartee crafted to highlight your opponent's shortcomings. In combat you can launch quips which provoke your foes.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Scathing Mockery": {
+                        "name": "Scathing Mockery",
+                        "condition": "Your target can hear and understand you.",
+                        "description": "You exaggerate your opponent's shortcomings with a scathing bon mot, performing a Diplomacy skill attack against your target's Willpower. On a success they suffer modest Psychic damage to Morale and become Enraged for 1 Round.",
+                        "effects": [
+                            {
+                                "name": "Scathing Mockery"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Pyromancer": {
             "name": "Pyromancer",
@@ -518,11 +1075,34 @@
         },
         "Rallying Cry": {
             "name": "Rallying Cry",
-            "description": "You are a battlefield leader, using your presence and voice to harden the resolve of your allies."
+            "description": "You are a battlefield leader, using your presence and voice to harden the resolve of your allies.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Rallying Cry": {
+                        "name": "Rallying Cry",
+                        "description": "You emit a courageous bellow that inspires Allies within 3 spaces of you to remain stalwart in the face of danger. You perform an Intimidation skill test against the Madness threshold of your allies. On a success, affected allies become Resolute for one Round.",
+                        "effects": [
+                            {
+                                "name": "Rallying Cry"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Rapid Reload": {
             "name": "Rapid Reload",
-            "description": "You focus deeply and calm your nerves to reload your mechanical weapon with exceptional haste."
+            "description": "You focus deeply and calm your nerves to reload your mechanical weapon with exceptional haste.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Rapid Reload": {
+                        "name": "Rapid Reload",
+                        "description": "<p>You quickly reload your mechanical weapon.</p>"
+                    }
+                }
+            }
         },
         "Recognize Spellcraft": {
             "name": "Recognize Spellcraft",
@@ -590,7 +1170,17 @@
         },
         "Ruthless Momentum": {
             "name": "Ruthless Momentum",
-            "description": "You relish the carnage you can cause with a two-handed weapon. After defeating a foe, you continue your attack with ruthless momentum, moving to strike another enemy at reduced cost."
+            "description": "You relish the carnage you can cause with a two-handed weapon. After defeating a foe, you continue your attack with ruthless momentum, moving to strike another enemy at reduced cost.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Ruthless Momentum": {
+                        "name": "Ruthless Momentum",
+                        "condition": "You incapacitate an enemy with a melee attack.",
+                        "description": "<p>After defeating an enemy, you may move up to your <strong>Stride</strong> and attack another foe within melee range.</p>"
+                    }
+                }
+            }
         },
         "Safecracker": {
             "name": "Safecracker",
@@ -602,19 +1192,69 @@
         },
         "Second Wind": {
             "name": "Second Wind",
-            "description": "Your physical hardiness allows you to push yourself beyond conventional limits."
+            "description": "Your physical hardiness allows you to push yourself beyond conventional limits.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Second Wind": {
+                        "name": "Second Wind",
+                        "description": "<p>You focus your energy and recover your Toughness score in Health.</p>"
+                    }
+                }
+            }
         },
         "Shapeshifter": {
             "name": "Shapeshifter",
-            "description": "<p>You possess supernatural ability to transform your body into the shapes of beasts.</p><p>You undergo a transformation where you assume the form of a beast that you are familiar with and which is half your level or less. While transformed you have the exact attributes and abilities of the chosen beast.</p><p>Your equipment is magically incorporated into the form that you take, however you gain no benefit from that equipment while transformed.</p><p>If your bestial form becomes Incapacitated you revert back to your normal form with any excess damage becoming Wounds. If your Morale is Broken while in beast form your transformation ends and any excess damage becomes Madness.</p>"
+            "description": "<p>You possess supernatural ability to transform your body into the shapes of beasts.</p><p>You undergo a transformation where you assume the form of a beast that you are familiar with and which is half your level or less. While transformed you have the exact attributes and abilities of the chosen beast.</p><p>Your equipment is magically incorporated into the form that you take, however you gain no benefit from that equipment while transformed.</p><p>If your bestial form becomes Incapacitated you revert back to your normal form with any excess damage becoming Wounds. If your Morale is Broken while in beast form your transformation ends and any excess damage becomes Madness.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Beast Shape": {
+                        "name": "Beast Shape",
+                        "description": "You assume the form of a beast that you are familiar with of one-half your level or less.",
+                        "effects": [
+                            {
+                                "name": "Beast Shape"
+                            }
+                        ]
+                    },
+                    "Revert Shape": {
+                        "name": "Revert Shape",
+                        "description": "You end your bestial transformation, returning to your normal form."
+                    }
+                }
+            }
         },
         "Shield Bash": {
             "name": "Shield Bash",
-            "description": "<p>You are practiced at fighting with shield, using it to slam into and imbalance your foes.</p>"
+            "description": "<p>You are practiced at fighting with shield, using it to slam into and imbalance your foes.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Shield Bash": {
+                        "name": "Shield Bash",
+                        "description": "<p>Following a basic Strike with your mainhand weapon, you <strong>Strike</strong> with your shield, causing the <strong>Staggered</strong> condition for one Round.</p>",
+                        "effects": [
+                            {
+                                "name": "Shield Bash"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Shield Charge": {
             "name": "Shield Charge",
-            "description": "A defensive technique in which you drive forward, slamming and pushing foes out of your path. You charge up to 6 spaces in a straight line and perform an offhand shield <strong>Strike</strong> against each successive foe along your path."
+            "description": "A defensive technique in which you drive forward, slamming and pushing foes out of your path. You charge up to 6 spaces in a straight line and perform an offhand shield <strong>Strike</strong> against each successive foe along your path.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Shield Charge": {
+                        "name": "Shield Charge",
+                        "description": "<p>You charge forward in a straight line, passing through the space of any creatures you encounter and making a <strong>Strike </strong>against each successive foe. Any creature <strong>Critically Hit</strong> by the attack may be pushed into an adjacent space of your choosing. You may not end your charge in the same space as another creature.</p>"
+                    }
+                }
+            }
         },
         "Shield Training": {
             "name": "Shield Training",
@@ -634,7 +1274,16 @@
         },
         "Soothe": {
             "name": "Soothe",
-            "description": "You administer a soothing Performance which rallies your allies, restoring Morale."
+            "description": "You administer a soothing Performance which rallies your allies, restoring Morale.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Soothe": {
+                        "name": "Soothe",
+                        "description": "<p>You perform a calming verse, benefiting all allies who can perceive you within 12 feet. Make a <strong>Performance Check</strong> against the Madness threshold of each ally. On success, each ally's Morale is restored.</p>"
+                    }
+                }
+            }
         },
         "Spellblade": {
             "name": "Spellblade",
@@ -642,7 +1291,21 @@
         },
         "Steadfast": {
             "name": "Steadfast",
-            "description": "Your patient resolve allows you to endure psychologically grueling ordeals with steadfast determination."
+            "description": "Your patient resolve allows you to endure psychologically grueling ordeals with steadfast determination.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Steadfast Resolve": {
+                        "name": "Steadfast Resolve",
+                        "description": "<p>You harden yourself against demoralization. Your Morale is increased by your Wisdom score and you temporarily gain the Resolute condition.</p>",
+                        "effects": [
+                            {
+                                "name": "Steadfast Resolve"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Still Lake": {
             "name": "Still Lake",
@@ -662,7 +1325,21 @@
         },
         "Stunning Strike": {
             "name": "Stunning Strike",
-            "description": "An challenging unarmed technique which targets vital pressure points on the bodies of your adversaries. You unleash a debilitating strike which, if successful, leaves your enemy Stunned."
+            "description": "An challenging unarmed technique which targets vital pressure points on the bodies of your adversaries. You unleash a debilitating strike which, if successful, leaves your enemy Stunned.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Stunning Strike": {
+                        "name": "Stunning Strike",
+                        "description": "<p>You <strong>Strike</strong> a vital pressure point, inflicting <strong>Stun</strong> on your enemy for 1 Round if successful.</p>",
+                        "effects": [
+                            {
+                                "name": "Stunning Strike"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Subtle Extrication": {
             "name": "Subtle Extrication",
@@ -670,7 +1347,21 @@
         },
         "Sundering Strike": {
             "name": "Sundering Strike",
-            "description": "<p>You know a martial technique to exploit the weakest points of an enemy's defenses, exposing them to further harm.</p>"
+            "description": "<p>You know a martial technique to exploit the weakest points of an enemy's defenses, exposing them to further harm.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Sundering Strike": {
+                        "name": "Sundering Strike",
+                        "description": "<p>You make a <strong>Strike</strong> with your mainhand weapon which, if successful, applies the <strong>Exposed </strong>condition to your target for 3 rounds. This attack is <strong>Difficult</strong> to perform and deals reduced damage.</p>",
+                        "effects": [
+                            {
+                                "name": "Sundered Armor"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Surgeweaver": {
             "name": "Surgeweaver",
@@ -682,11 +1373,29 @@
         },
         "Swipe": {
             "name": "Swipe",
-            "description": "You perform a broad swipe with your weapon, hitting two adjacent targets within your weapon range."
+            "description": "You perform a broad swipe with your weapon, hitting two adjacent targets within your weapon range.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Swipe": {
+                        "name": "Swipe",
+                        "description": "<p>You perform a <strong>Strike</strong> against two adjacent enemies, attacking both of them using a single swing of your great weapon.</p>"
+                    }
+                }
+            }
         },
         "Tactician": {
             "name": "Tactician",
-            "description": "<p>You are a cunning battlefield tactician, able to organize and direct your allies to act with increased effectiveness.</p>"
+            "description": "<p>You are a cunning battlefield tactician, able to organize and direct your allies to act with increased effectiveness.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Tactical Plan": {
+                        "name": "Tactical Plan",
+                        "description": "Using 10 words or fewer, describe a course of action to an ally who acts after you in Initiative order. If that ally carries out your described plan later in the same Round, they gain +2 Boons on any dice rolls associated with that plan. The Gamemaster may arbitrate whether or not the plan was followed."
+                    }
+                }
+            }
         },
         "Testudo": {
             "name": "Testudo",
@@ -702,7 +1411,16 @@
         },
         "Thread the Needle": {
             "name": "Thread the Needle",
-            "description": "You concentrate to fire a shot into the swirl of melee. This attack benefits from <strong>Flanking</strong> as if it were a melee attack."
+            "description": "You concentrate to fire a shot into the swirl of melee. This attack benefits from <strong>Flanking</strong> as if it were a melee attack.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Thread the Needle": {
+                        "name": "Thread the Needle",
+                        "description": "<p>You fire a precise shot into melee combat, targeting an enemy which is engaged by one of your allies.</p>"
+                    }
+                }
+            }
         },
         "True Grit": {
             "name": "True Grit",
@@ -710,11 +1428,29 @@
         },
         "Tumble Through": {
             "name": "Tumble Through",
-            "description": "You can use your athleticism in dangerous situations to escape harm or bypass enemy combatants."
+            "description": "You can use your athleticism in dangerous situations to escape harm or bypass enemy combatants.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Tumble": {
+                        "name": "Tumble",
+                        "description": "<p>Make a <strong>Pathfinding</strong> skill Attack against an adjacent enemy contested by your target's <strong>Reflex</strong> defense.</p><p>On a success you may move up to twice your <strong>Stride</strong>, including the ability to pass through your target enemy's space, without provoking any <strong>Disengagement</strong> reactions.</p><p>On a failure your movement is blocked and your remain in your current position.</p>"
+                    }
+                }
+            }
         },
         "Twinned Shot": {
             "name": "Twinned Shot",
-            "description": "<p>You prepare two shots to fire simultaneously at a single target.</p>"
+            "description": "<p>You prepare two shots to fire simultaneously at a single target.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Twinned Shot": {
+                        "name": "Twinned Shot",
+                        "description": "<p>Using this <strong>Difficult</strong> technique, you fire two projectiles at once making two <strong>Strike</strong> attacks against the same target.</p>"
+                    }
+                }
+            }
         },
         "Unarmed Blocking": {
             "name": "Unarmed Blocking",
@@ -730,7 +1466,16 @@
         },
         "Uppercut": {
             "name": "Uppercut",
-            "description": "A two-handed weapon technique where you swing your weapon upwards, making a second Strike with the backswing of your weapon."
+            "description": "A two-handed weapon technique where you swing your weapon upwards, making a second Strike with the backswing of your weapon.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Uppercut": {
+                        "name": "Uppercut",
+                        "description": "<p>Following a basic Strike attack which did not critically miss, you <strong>Strike</strong> the same target again with the backswing of your weapon at reduced <strong>Action</strong> cost.</p>"
+                    }
+                }
+            }
         },
         "Voidcaller": {
             "name": "Voidcaller",
@@ -738,7 +1483,21 @@
         },
         "Vow of Animus": {
             "name": "Vow of Animus",
-            "description": "You swear a vow to destroy a specific character or creature. You gain +2 Boons to Strike or Spell attacks against to subject of your vow. You may only swear such a vow against one enemy at a time. Swearing a new vow relinquishes your prior vow."
+            "description": "You swear a vow to destroy a specific character or creature. You gain +2 Boons to Strike or Spell attacks against to subject of your vow. You may only swear such a vow against one enemy at a time. Swearing a new vow relinquishes your prior vow.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Vow of Animus": {
+                        "name": "Vow of Animus",
+                        "description": "<p>You vow to vanquish a specific foe who becomes the subject of your animus.</p>",
+                        "effects": [
+                            {
+                                "name": "Vow of Animus"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "War Mage": {
             "name": "War Mage",
@@ -750,14 +1509,40 @@
         },
         "Wrestler": {
             "name": "Wrestler",
-            "description": "You are able to subdue opponents using your physical Strength."
+            "description": "You are able to subdue opponents using your physical Strength.",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Grapple": {
+                        "name": "Grapple",
+                        "description": "Perform a melee attack against an adjacent target. If successful, both you and your target are Restrained for 1 Round.",
+                        "effects": [
+                            {
+                                "name": "Grapple"
+                            }
+                        ]
+                    }
+                }
+            }
         },
         "Zealous Smite": {
             "name": "Zealous Smite",
-            "description": "<p>You can imbue righteous power into your blow with a heavy weapon.</p>"
+            "description": "<p>You can imbue righteous power into your blow with a heavy weapon.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Zealous Smite": {
+                        "name": "Zealous Smite",
+                        "condition": "You are attacking an Exposed enemy with a Heavy weapon.",
+                        "description": "<p>You <strong>Strike</strong> using a Strength-based weapon. The attack becomes <strong>Deadly</strong> and any damage dealt is <strong>Radiant</strong>.</p>"
+                    }
+                }
+            }
         }
     },
     "mapping": {
-        "description": "system.description"
+        "description": "system.description",
+        "actions": "system.actions",
+        "effects": "system.actions.*.effects"
     }
 }
