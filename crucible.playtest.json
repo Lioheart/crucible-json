@@ -4,6 +4,7 @@
         "Playtest 1 - The Ring of Valor": {
             "name": "Playtest 1 - The Ring of Valor",
             "caption": "Test your mettle in the Ring of Valor, the first available playtest for the Crucible game system.",
+            "description": "<p><em>The Ring of Valor</em> is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of escalating challenges.</p>",
             "folders": {
                 "Crucible Playtest": "Crucible Playtest",
                 "The Ring of Valor": "The Ring of Valor",
@@ -175,8 +176,7 @@
                         "name": "Ulfen"
                     }
                 }
-            },
-            "description": "<p><em>The Ring of Valor</em> is a guided introduction to character development and combat mechanics in Crucible which places players in the role of a gladiatorial team facing a sequence of escalating challenges.</p>"
+            }
         }
     }
 }
