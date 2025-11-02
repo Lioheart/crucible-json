@@ -1,0 +1,24 @@
+{
+    "label": "Spell",
+    "entries": {
+        "Bind Armament": {
+            "name": "Bind Armament",
+            "description": "<p>You bind the weapon currently equipped in your main-hand as your Bound Armament.</p><p>While bound, you may conjure the weapon into a free hand without any resource cost. You can conjure the weapon across any distance including if it has been <strong>Disarmed</strong>.</p><p></p><p></p>"
+        },
+        "Dawn Beacon": {
+            "name": "Dawn Beacon",
+            "description": "<p>You call forth the piercing light of dawn that penetrates the darkness around you, revealing the area and dispelling sources of magical darkness.</p>"
+        },
+        "Engulfing Darkness": {
+            "name": "Engulfing Darkness",
+            "description": "<p>You conjure an oppressive sphere of magical darkness that shrouds vision and suffocates light within its area.</p>"
+        },
+        "Protective Mirage": {
+            "name": "Protective Mirage",
+            "description": "<p>You <strong>Aspect </strong>yourself in a mirage of shifting <strong>Illumination</strong> and <strong>Shadow</strong> which mask your current position and allow you to <strong>Elude</strong> incoming blows.</p>"
+        }
+    },
+    "mapping": {
+        "description": "system.description"
+    }
+}

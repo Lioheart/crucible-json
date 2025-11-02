@@ -61,6 +61,17 @@
                     "name": "Arena of Valor"
                 }
             },
+            "macros": {
+                "Recover": {
+                    "name": "Recover"
+                },
+                "Toggle Talent Tree": {
+                    "name": "Toggle Talent Tree"
+                },
+                "Full Rest": {
+                    "name": "Full Rest"
+                }
+            },
             "actors": {
                 "Baizaz": {
                     "name": "Baizaz",

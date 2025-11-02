@@ -3,6 +3,7 @@
     "folders": {
         "Shield": "Shield",
         "Skills": "Skills",
+        "Two-Handed": "Two-Handed",
         "Morale": "Morale",
         "Block": "Block",
         "Melee": "Melee",
@@ -21,6 +22,7 @@
         "Spellcraft": "Spellcraft",
         "Utility": "Utility",
         "Finesse": "Finesse",
+        "Thrown": "Thrown",
         "Engagement": "Engagement",
         "Resources": "Resources",
         "Critical Hits": "Critical Hits",
@@ -29,15 +31,17 @@
         "Signature": "Signature",
         "Actions": "Actions",
         "Ranged": "Ranged",
+        "Weaponry": "Weaponry",
         "Parry": "Parry",
         "Spellcraft: Inflection": "Spellcraft: Inflection",
+        "Tradecraft": "Tradecraft",
         "Armor": "Armor",
         "Action": "Action",
         "Focus": "Focus",
         "Health": "Health",
         "Heavy": "Heavy",
-        "Two-Handed": "Two-Handed",
-        "Unarmed": "Unarmed"
+        "Unarmed": "Unarmed",
+        "Projectile": "Projectile"
     },
     "entries": {
         "Alchemical Resolve": {
@@ -53,6 +57,12 @@
                 }
             }
         },
+        "Alchemy Journeyman": {
+            "name": "Alchemy Journeyman"
+        },
+        "Alchemy Novice": {
+            "name": "Alchemy Novice"
+        },
         "Anticipate Harm": {
             "name": "Anticipate Harm",
             "description": "Your keen reflexes and acuity allow you to anticipate imminent danger and react to avoid it.",
@@ -62,22 +72,38 @@
                     "Anticipate Harm": {
                         "name": "Anticipate Harm",
                         "condition": "You are targeted by an area-of-effect attack, the source of which you can see.",
-                        "description": "You may immediately Move 1 space after the area-of-effect of the attack is declared. If this movement escapes the area of the attack, you are unaffected."
+                        "description": "<p>You may immediately move 4 feet after the area-of-effect of the attack is declared. If this movement escapes the area of the attack, you are unaffected.</p>"
                     }
                 }
             }
         },
+        "Arcana Adept": {
+            "name": "Arcana Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Arcana </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Arcana Journeyman": {
+            "name": "Arcana Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman</strong> rank in the <strong>Arcana </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Arcana Master": {
+            "name": "Arcana Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Arcana </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Arcana Novice": {
+            "name": "Arcana Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">Your education covered the fundamentals of metaphysics and magical theory, the relationship between the runes, the opposing nature of order and chaos, and a cursory introduction to spiritual beings including the most commonly known deified and demonized figures of worship. You gain the <strong>Novice</strong> rank in the <strong>Arcana </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">Your rudimentary understanding of the principle grammar of magic is sufficient to identify which lesser rune a spell or ritual may be using, as well as the gesture used (if not the inflection). You can identify whether a figure is influenced more by chaos or by order, and can spot the signs of common spirits (both lesser and greater). You know enough about religious customs to communicate with those who worship a particular spirit or deity without embarrassing yourself.</span></p>"
+        },
         "Arcane Archer": {
             "name": "Arcane Archer",
-            "description": "<p>Your skill with archery can shape your spellcraft, partially substituting for the somatic gestures of traditional spellcasting. With a ranged weapon equipped you ignore the free-hand requirement for casting spells that use the <strong>Arrow</strong> gesture.</p><p>After performing a <strong>Strike</strong> with a projectile weapon, you may cast a spell using the <strong>Arrow</strong> gesture during the same Turn with Action Cost reduced by 1.</p>"
-        },
-        "Archery Training": {
-            "name": "Archery Training",
-            "description": "<p>You are educated and trained in the arts of projectile weaponry like bows, crossbows, firearms, and slings.</p>\n<p>You gain a +1 Skill bonus to attacks using ranged weapons in the <strong>Projectile</strong> or <strong>Mechanical</strong> category.</p>"
+            "description": "<p>Your skill with archery can shape your spellcraft, partially substituting for the somatic gestures of traditional spellcasting.</p><p>While using a <strong>Projectile </strong>weapon as your mainhand weapon, you ignore the free-hand requirement for casting spells using the <strong>Arrow</strong> gesture and the range of those spells becomes your weapon range.</p><p>Immediately after performing a <strong>Strike</strong> with a projectile weapon, you may cast a spell with its <strong>Action</strong> cost reduced by 1.</p>"
         },
         "Armored Efficiency": {
             "name": "Armored Efficiency",
             "description": "<p>You are trained in wearing the heaviest types of armor while still retaining mobility. You are able to use a free Movement action once per Turn while wearing Heavy armor.</p>"
+        },
+        "Armored Shell": {
+            "name": "Armored Shell",
+            "description": "<p>You are expert in using your armor in combination with your shield to create a defensive shell.</p><p>When you have the <strong>Guarded</strong> condition and have a <strong>Heavy Shield</strong> equipped, your base <strong>Armor</strong> defense is reduced by half but your <strong>Block</strong> defense increases by a corresponding amount.</p>"
         },
         "Artful Parry": {
             "name": "Artful Parry",
@@ -115,10 +141,42 @@
                 "entries": {
                     "Assess Strength": {
                         "name": "Assess Strength",
-                        "description": "You observe a creature you can see to assess it's notable areas of strength."
+                        "description": "<p>You observe a creature you can see to assess it's notable areas of strength.</p>"
                     }
                 }
             }
+        },
+        "Athletics Adept": {
+            "name": "Athletics Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Athletics </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Athletics Journeyman": {
+            "name": "Athletics Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Athletics </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Athletics Master": {
+            "name": "Athletics Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Athletics </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Athletics Novice": {
+            "name": "Athletics Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You have received training in basic athletics. You gain the <strong>Novice</strong> rank in the <strong>Athletics</strong> skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You know whether a surface can support your weight or not, how to find handholds while climbing, and how to distribute your weight for buoyancy when swimming. You know how to run for distance, and how to pace yourself to avoid exhaustion.</span></p>"
+        },
+        "Awareness Adept": {
+            "name": "Awareness Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Awareness </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Awareness Journeyman": {
+            "name": "Awareness Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Awareness </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Awareness Master": {
+            "name": "Awareness Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Awareness </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Awareness Novice": {
+            "name": "Awareness Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You have been trained in the basics of situational awareness, and are able to notice important details about your environment. You gain the <strong>Novice</strong> rank in the <strong>Awareness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You know to check for exits when you enter a room, and how to look for concealed weapons, hidden traps, and other threats. You know how to spot when you are being followed, and how to search for common hiding places.</span></p>"
         },
         "Backstab": {
             "name": "Backstab",
@@ -134,6 +192,25 @@
                 }
             }
         },
+        "Bard": {
+            "name": "Bard",
+            "description": "<p>You practice the oral and musical traditions of heroic storytelling to inspire courage in your allies, demoralize your foes, and be quick with unconventional solutions to problems.</p><p>You learn <strong>Rune: Spirit </strong>if you do not already know it. When restoring the morale of allies using the Rune of Spirit you gain <strong>+2 Boons</strong> to your roll.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Laughing Matter": {
+                        "name": "Laughing Matter",
+                        "condition": "An enemy fails to affect you or any ally with an attack.",
+                        "description": "<p>When an enemy uses an attack that fails to affect you or any ally, you construct a cutting jest or pantomime which makes a fool of their feeble effort.</p><p>You make an <strong>Performance</strong> skill attack against the target's <strong>Fortitude</strong>, dealing <strong>Psychic</strong> damage to <strong>Morale</strong> upon a success. Furthermore, upon a success, the target suffers 1 <strong>Bane</strong> to all rolls until the start of their next turn.</p><p>The target must be able to see and understand you to be affected by this ability.</p>",
+                        "effects": [
+                            {
+                                "name": "Laughing Matter"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
         "Battle Focus": {
             "name": "Battle Focus",
             "description": "You find focus and calm within the thrill of battle. When you achieve a <strong>Critical Hit</strong> that deals damage to Health or Morale you gain +1 Focus. This benefit may occur at most once per Round."
@@ -141,6 +218,19 @@
         "Beastmaster": {
             "name": "Beastmaster",
             "description": "<p>You have trained your animal companion to aid you in combat. Your companion may participate in encounters as an allied combatant.</p>"
+        },
+        "Berserk Strike": {
+            "name": "Berserk Strike",
+            "description": "<p>You channel your lust for combat into an adrenaline-fueled strike which increases in power as you become more wounded.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Berserk Strike": {
+                        "name": "Berserk Strike",
+                        "description": "<p>You imbue your strike with momentum and intensity, increasing the <strong>Damage Bonus</strong> of your strike according to your missing <strong>Health</strong>.</p><ul><li><p>If your Health is below 75%, your Strike deals <strong>+1 Damage</strong></p></li><li><p>If your Health is below 50%, your Strike deals <strong>+2 Damage</strong></p></li><li><p>If your Health is below 25%, your Strike deals <strong>+3 Damage</strong></p></li></ul><p>This damage bonus is doubled if you are using a <strong>Two-Handed</strong> weapon.</p>"
+                    }
+                }
+            }
         },
         "Berserker": {
             "name": "Berserker",
@@ -167,7 +257,7 @@
         },
         "Blood Magic": {
             "name": "Blood Magic",
-            "description": "<p>You rely upon occult techniques to transform physical pain into arcane potential. You cast spells by spending Health instead of Focus. When casting a spell each point of Focus costs 10 points of Health.</p>"
+            "description": "<p>You rely upon occult techniques to transform physical pain into arcane potential. </p><p>You cast spells by spending <strong>Health</strong> instead of <strong>Focus</strong>. When casting a spell each point of Focus costs 10 points of Health instead. Spells you cast cannot restore your own <strong>Health</strong>.</p>"
         },
         "Bloodletter": {
             "name": "Bloodletter",
@@ -189,13 +279,13 @@
         },
         "Bull Rush": {
             "name": "Bull Rush",
-            "description": "You can use your physical prowess to push past opponents who block your path.",
+            "description": "<p>You can use your physical prowess to push past opponents who block your path.</p>",
             "actions": {
                 "converter": "translateActionsMap",
                 "entries": {
                     "Bull Rush": {
                         "name": "Bull Rush",
-                        "description": "<p>Make a Pathfinding skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked Prone and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
+                        "description": "<p>Make an <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's Fortitude defense. On a success you may move up to your <strong>Stride</strong> directly through the enemy's space. Your enemy is knocked Prone and may not make any attack of opportunity against you. On a failure your movement is blocked and your remain in your current position.</p>",
                         "effects": [
                             {
                                 "name": "Bull Rush"
@@ -225,7 +315,7 @@
                 "entries": {
                     "Clarify Intent": {
                         "name": "Clarify Intent",
-                        "description": "You explain your intentions to an ally within 3 spaces. Make an <strong>Diplomacy</strong> skill attack against your ally's Madness Threshold. If successful they gain +1 <strong>Focus</strong> and +1 <strong>Boon</strong> to actions made within the next Round.",
+                        "description": "<p>You explain your intentions to an ally within 12 feet. Make an <strong>Diplomacy</strong> skill attack against your ally's Madness Threshold. If successful they gain +1 <strong>Focus</strong> and +1 <strong>Boon</strong> to actions made within the next Round.</p>",
                         "effects": [
                             {
                                 "name": "Clarify Intent"
@@ -272,6 +362,12 @@
         "Conserve Effort": {
             "name": "Conserve Effort",
             "description": "<p>You find calmness and focus in conserving your effort in battle. When you end your <strong>Turn</strong> with un-spent Action you gain <strong>+1 Focus</strong>.</p>"
+        },
+        "Cooking Journeyman": {
+            "name": "Cooking Journeyman"
+        },
+        "Cooking Novice": {
+            "name": "Cooking Novice"
         },
         "Counter Evade": {
             "name": "Counter Evade",
@@ -329,6 +425,22 @@
                 }
             }
         },
+        "Deception Adept": {
+            "name": "Deception Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Deception </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Deception Journeyman": {
+            "name": "Deception Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Deception </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Deception Master": {
+            "name": "Deception Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Deception </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Deception Novice": {
+            "name": "Deception Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You are a liar and manipulator, and deception is a skill you've practiced. You gain the <strong>Novice</strong> rank in the <strong>Deception </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You know how to construct basic lies and cons, and the telltale signs that tend to give away poor liars. You can construct a basic forgery for most common documents, but they won't stand up to any measure of close scrutiny.</span></p>"
+        },
         "Defensive Roll": {
             "name": "Defensive Roll",
             "description": "<p>You are a nimble skirmisher, always in movement to stay one step ahead of your enemies in combat.</p>",
@@ -356,6 +468,22 @@
                 }
             }
         },
+        "Diplomacy Adept": {
+            "name": "Diplomacy Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Diplomacy </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Diplomacy Journeyman": {
+            "name": "Diplomacy Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Diplomacy </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Diplomacy Master": {
+            "name": "Diplomacy Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Diplomacy </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Diplomacy Novice": {
+            "name": "Diplomacy Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You know the basics of debate and how to use rhetorical devices to make your arguments more convincing. You gain the <strong>Novice</strong> rank in the <strong>Diplomacy </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You know how to leverage emotion in your words to inspire others or sway their opinions. You can make a convincing argument, and you can generally steer others to agree with your point of view.</span></p>"
+        },
         "Dirty Tricks": {
             "name": "Dirty Tricks",
             "description": "You have pouches of sand and dust that you use to temporarily distract or blind an enemy.",
@@ -364,7 +492,7 @@
                 "entries": {
                     "Dirty Tricks": {
                         "name": "Dirty Tricks",
-                        "description": "You fling debris into the eyes of an enemy. If the Strike is successful, they are Blinded until the end of their next Turn.",
+                        "description": "<p>You fling debris into the eyes of an enemy. If the Strike is successful, they are Blinded until the end of their next Turn.</p>",
                         "effects": [
                             {
                                 "name": "Dirty Tricks"
@@ -382,7 +510,7 @@
                 "entries": {
                     "Disarming Strike": {
                         "name": "Disarming Strike",
-                        "description": "<p>You make a <strong>Strike </strong>against a the <strong>Reflex</strong> defense of a single target. The technique is <strong>Difficult</strong> to perform and deals reduced damage. If successful, the target is forced to unqeuip a held item of your choosing that is not secured.</p><p><strong>TODO: Add automation for the Disarm effect.</strong></p>"
+                        "description": "<p>You make a <strong>Strike </strong>against a the <strong>Reflex</strong> defense of a single target. The technique is <strong>Difficult</strong> to perform and deals reduced damage. If successful, the target's mainhand weapon is <strong>Dropped</strong>.</p>"
                     }
                 }
             }
@@ -412,7 +540,7 @@
                 "entries": {
                     "Formidable Presence": {
                         "name": "Formidable Presence",
-                        "description": "You make an Intimidation skill attack against the Willpower defense of enemies within 3 spaces, dealing Void damage to Morale and causing the Frightened condition for 1 Round to those whose defense you overcome.",
+                        "description": "<p>You make an Intimidation skill attack against the Willpower defense of enemies within 12 feet, dealing Void damage to Morale and causing the Frightened condition for 1 Round to those whose defense you overcome.</p>",
                         "effects": [
                             {
                                 "name": "Formidable Presence"
@@ -439,9 +567,15 @@
             "name": "Dustbinder",
             "description": "<p>You are highly skilled in weaving the Rune of Earth. Spells which use this Rune cause the Corroding condition on Critical Hits.</p><p>The Corroding effect lasts for 3 Rounds and deals your Wisdom score as Acid damage to Health each Round.</p>"
         },
+        "Enchanting Journeyman": {
+            "name": "Enchanting Journeyman"
+        },
+        "Enchanting Novice": {
+            "name": "Enchanting Novice"
+        },
         "Evasive Shot": {
             "name": "Evasive Shot",
-            "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks. After performing a ranged weapon attack, you gain your <strong>Stride</strong> in additional free movement.</p>"
+            "description": "<p>You are an expert at firing shots with ranged weaponry while evading enemy attacks. After performing a ranged weapon attack, you gain half your <strong>Stride</strong> in additional free movement.</p>"
         },
         "Executioner's Strike": {
             "name": "Executioner's Strike",
@@ -471,7 +605,7 @@
                     "Extoll Deeds": {
                         "name": "Extoll Deeds",
                         "condition": "An ally whom you can see slays or scores a critical hit against an enemy.",
-                        "description": "<p>You compose a verse, make a quip, or shout a battle cry to extoll the heroic deeds of one of your allies. Make a <strong>Performance</strong> check against your allies' Madness threshold, restoring Morale to those who can perceive your performance.</p>"
+                        "description": "<p>You compose a verse, make a quip, or shout a battle cry to extoll the heroic deeds of one of your allies. All allies near to you regain <strong>Morale</strong> equal to half your <strong>Presence</strong> score.</p>"
                     }
                 }
             }
@@ -508,7 +642,7 @@
         },
         "Ferocious Leap": {
             "name": "Ferocious Leap",
-            "description": "You leap powerfully into battle to deliver a punishing blow to a nearby enemy.",
+            "description": "<p>You leap powerfully into battle to deliver a punishing blow to a nearby enemy with your mainhand weapon.</p>",
             "actions": {
                 "converter": "translateActionsMap",
                 "entries": {
@@ -519,9 +653,42 @@
                 }
             }
         },
-        "Finesse Weapon Training": {
-            "name": "Finesse Weapon Training",
-            "description": "<p>You are educated and trained in the arts if wielding weapons which require a combination of nimble agility and martial proficiency.</p>\n<p>You gain a +1 Skill bonus to attacks using melee weapons in the <strong>Light</strong> or <strong>Balanced</strong> categories.</p>"
+        "Flaming Arrow": {
+            "name": "Flaming Arrow",
+            "description": "<p>You take time to light and loose an arrow covered in flammable pitch. This shot takes longer but is very damaging to either creatures or structures.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Flaming Arrow": {
+                        "name": "Flaming Arrow",
+                        "description": "<p>You loose a <strong>Empowered</strong> ranged strike using a <strong>Projectile</strong> weapon which deals <strong>Fire</strong> damage upon impact.</p>"
+                    }
+                }
+            }
+        },
+        "Flash of Steel": {
+            "name": "Flash of Steel",
+            "description": "<p>You are an expert in using a thrown weapon to imbalance or expose your target for follow-up strikes.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Flash of Steel": {
+                        "name": "Flash of Steel",
+                        "description": "<p>You make a <strong>Thrown </strong>weapon attack, targeting a weak point in your enemy's defences. If the attack hits, the target becomes <strong>Exposed</strong> until the start of their next Turn.</p>",
+                        "effects": [
+                            {
+                                "name": "Flash of Steel"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Fletching Journeyman": {
+            "name": "Fletching Journeyman"
+        },
+        "Fletching Novice": {
+            "name": "Fletching Novice"
         },
         "Flurry": {
             "name": "Flurry",
@@ -569,7 +736,7 @@
         },
         "Gesture: Arrow": {
             "name": "Gesture: Arrow",
-            "description": "<p>Hurl a projectile of magical power at a distant target. This might use the Lightning Rune to hurl a lightning bolt, or the Shadow rune to hurl a ball of devouring darkness.</p>\n<p>The Arrow gesture scales using <strong>Intellect</strong> and targets a <strong>single</strong> creature up to a distance of 10 spaces, dealing 10 base damage on a successful attack.</p>"
+            "description": "<p>Hurl a projectile of magical power at a distant target. This might use the Lightning Rune to hurl a lightning bolt, or the Shadow rune to hurl a ball of devouring darkness.</p><p>The Arrow gesture scales using <strong>Intellect</strong> and targets a <strong>single</strong> creature up to a distance of 60 feet, dealing 8 base damage on a successful attack.</p>"
         },
         "Gesture: Aspect": {
             "name": "Gesture: Aspect",
@@ -577,31 +744,31 @@
         },
         "Gesture: Create": {
             "name": "Gesture: Create",
-            "description": "<p>Coalesce arcane power into tangible form, conjuring a <strong>Creation</strong> which appears in an adjacent space and joins Combat at Initiative 1.</p>\n<p>Your Creation is a Minion of half your own Level chosen from the Summoned Creatures compendium pack corresponding to the Rune used in the spell.</p>\n<p>The Creation lasts for <strong>10 Rounds</strong>. You may only have one active Creation, casting another spell using the Create gesture replaces your previous Creation.</p>"
+            "description": "<p>Coalesce arcane power into tangible form, conjuring a <strong>Creation</strong> which appears within 10 feet and joins Combat at Initiative 1.</p><p>Your Creation is a Minion of half your own Level chosen from the Summoned Creatures compendium pack corresponding to the Rune used in the spell.</p><p>The Creation lasts for <strong>10 Rounds</strong>. You may only have one active Creation, casting another spell using the Create gesture replaces your previous Creation.</p>"
         },
         "Gesture: Fan": {
             "name": "Gesture: Fan",
-            "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p>\n<p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree cone with distance 1, dealing 6 base damage on a successful attack.</p>"
+            "description": "<p>Focus the essence of a rune into a sweeping or splintered arc to strike multiple targets in close proximity. If used with Earth, this might hurl a spray of stone in an arc, while using it with Kinesis might carve a slice across multiple foes.</p><p>The Fan gesture scales using <strong>Intellect</strong> and targets a 120 degree, 6 foot cone, dealing 6 base damage on a successful attack.</p>"
         },
         "Gesture: Influence": {
             "name": "Gesture: Influence",
-            "description": "<p>Intensify an arcane phenomenon at close range. Influence could be used with the Flame rune to set a target ablaze or with the Stasis rune to sap their Morale.</p>\n<p>The Influence gesture is a more powerful evolution of the basic Touch gesture that is learned with any Rune.</p>\n<p>The Influence gesture scales using <strong>Presence</strong> and targets a <strong>single</strong> adjacent creature, dealing 12 base damage on a successful attack.</p>"
+            "description": "<p>Intensify an arcane phenomenon at close range. Influence could be used with the Flame rune to set a target ablaze or with the Stasis rune to sap their Morale.</p><p>The Influence gesture is a more powerful evolution of the basic Touch gesture that is learned with any Rune.</p><p>The Influence gesture scales using <strong>Presence</strong> and targets a <strong>single</strong> adjacent creature, dealing 10 base damage on a successful attack.</p>"
         },
         "Gesture: Pulse": {
             "name": "Gesture: Pulse",
-            "description": "<p>Emit a burst of Runic power in a circular wave that travels outward, with you at its center. A Pulse of Spirit might be used to bolster Morale for your allies, while a Death pulse might be used to deal Corruption damage to a group of enemies gathered around you.</p>\n<p>The Pulse gesture scales using <strong>Presence</strong> and targets a 360 degree radius with distance 1, dealing 6 base damage on a successful attack.</p>"
+            "description": "<p>Emit a burst of Runic power in a circular wave that travels outward, with you at its center. A Pulse of Spirit might be used to bolster Morale for your allies, while a Death pulse might be used to deal Corruption damage to a group of enemies gathered around you.</p><p>The Pulse gesture scales using <strong>Presence</strong> and targets a 360 degree, 6 foot radius, dealing 6 base damage on a successful attack.</p>"
         },
         "Gesture: Ray": {
             "name": "Gesture: Ray",
-            "description": "<p>Focus the power of a Rune into a single point, expelling its energy into a ranged beam which rapidly travels a short distance to a targeted area. If used with Life this might restore the HP of a distant ally steadily over time, while Frost might emit a beam that freezes a target in place.</p>\n<p>The Ray gesture scales using <strong>Wisdom</strong> and targets a line emanating from the caster at distance 6, dealing 6 base damage on a successful attack.</p>"
+            "description": "<p>Focus the power of a Rune into a single point, expelling its energy into a ranged beam which rapidly travels a short distance to a targeted area. If used with Life this might restore the HP of a distant ally steadily over time, while Frost might emit a beam that freezes a target in place.</p><p>The Ray gesture scales using <strong>Wisdom</strong> and targets a 30 foot line emanating from the caster, dealing 6 base damage on a successful attack.</p>"
         },
         "Gesture: Step": {
             "name": "Gesture: Step",
-            "description": "<p>Infuse runic power into a movement, crossing physical and spatial boundaries. Move 4 spaces in a straight line, dealing minor damage to enemies or applying restoration to allies in your path.</p>\n<p>The Step gesture scales with <strong>Dexterity</strong>, targets a line with distance 4, dealing 4 base damage on a successful attack.</p>"
+            "description": "<p>Infuse runic power into a movement, crossing physical and spatial boundaries. Move 20 feet in a straight line, dealing minor damage to enemies or applying restoration to allies in your path.</p><p>The Step gesture scales with <strong>Dexterity</strong> and targets a 20 foot line, dealing 2 base damage on a successful attack.</p>"
         },
         "Gesture: Strike": {
             "name": "Gesture: Strike",
-            "description": "<p>Empower a close-range attack with the essence of a Rune. This rune performs a melee weapon attack targeting the defense and dealing damage of the Rune used in the spell.</p>\n<p>The Strike gesture scales using <strong>Strength</strong> and targets a <strong>single</strong> adjacent creature, dealing 12 base damage on a successful attack.</p>"
+            "description": "<p>Empower a close-range attack with the essence of a Rune. This rune performs a melee weapon attack targeting the defense and dealing damage of the Rune used in the spell.</p><p>The Strike gesture scales using <strong>Strength</strong> and targets a <strong>single</strong> adjacent creature, dealing base damage according to your equipped weapon on a successful attack.</p>"
         },
         "Gesture: Ward": {
             "name": "Gesture: Ward",
@@ -659,6 +826,14 @@
                     }
                 }
             }
+        },
+        "Heavy Weapon Proficiency": {
+            "name": "Heavy Weapon Proficiency",
+            "description": "<p>You have a fluent education in the use of martial weaponry. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Simple</strong>, <strong>Heavy</strong>, and <strong>Balanced</strong> categories.</p>"
+        },
+        "Heavy Weapon Training": {
+            "name": "Heavy Weapon Training",
+            "description": "<p>You have a basic education in the use of martial weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Heavy</strong>, or <strong>Balanced</strong> categories.</p>"
         },
         "Hold Fast": {
             "name": "Hold Fast",
@@ -758,6 +933,36 @@
                 }
             }
         },
+        "Interrupting Throw": {
+            "name": "Interrupting Throw",
+            "description": "<p>You are alert and prepared to use your equipped weapon to interrupt enemy spellcraft.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Interrupting Throw": {
+                        "name": "Interrupting Throw",
+                        "condition": "An enemy you can see casts a Spell which costs 3 Action or greater.",
+                        "description": "<p>When an enemy that you can see casts a <strong>Spell</strong> which costs <strong>3 Action</strong> or greater, you can make a <strong>Reaction</strong> to perform a <strong>Thrown</strong> weapon attack against the caster. If your attack results in a <strong>Critical Hit</strong> the spell is interrupted and its magic is lost.</p>"
+                    }
+                }
+            }
+        },
+        "Intimidation Adept": {
+            "name": "Intimidation Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Intimidation </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Intimidation Journeyman": {
+            "name": "Intimidation Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Intimidation </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Intimidation Master": {
+            "name": "Intimidation Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Intimidation </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Intimidation Novice": {
+            "name": "Intimidation Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You understand the fundamentals of how threats and coercion can achieve desired outcomes. You gain the <strong>Novice</strong> rank in the <strong>Intimidation </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You know how to use simple displays of violence or overt threats to get others to follow your lead, but you aren't very subtle.</span></p>"
+        },
         "Intimidator": {
             "name": "Intimidator",
             "description": "You specialize in exerting your intimidating presence to break the morale of your foes.",
@@ -766,20 +971,20 @@
                 "entries": {
                     "Intimidate": {
                         "name": "Intimidate",
-                        "description": "You physically intimidate an enemy that is within your engagement range, performing an Intimidation skill attack against your target. On a success they sustain Void damage to Morale."
+                        "description": "<p>You physically intimidate an enemy that is within your engagement range, performing an Intimidation skill attack against your target. On a success they sustain Void damage to Morale.</p>"
                     }
                 }
             }
         },
         "Intuit Weakness": {
             "name": "Intuit Weakness",
-            "description": "You calm your mind and study the physiology of your foe, seeking a vulnerability in its defenses. The Gamemaster performs a passive <strong>Knowledge Test</strong> against the enemy. If successful you learn one Damage type that the creature is vulnerable to, if any.",
+            "description": "<p>You calm your mind and study the physiology of your foe, seeking a vulnerability in its defenses.</p><p>Perform a <strong>Knowledge Test</strong> using an appropriate Skill chosen by the Gamemaster. On a success, you learn the Damage type that the creature has the greatest vulnerability towards, if any. On a Critical Success you learn the two Damage types which have the largest vulnerability.</p>",
             "actions": {
                 "converter": "translateActionsMap",
                 "entries": {
                     "Intuit Weakness": {
                         "name": "Intuit Weakness",
-                        "description": "You still your mind and study the physiology of your foe, attempting to identify a vulnerability in its defenses."
+                        "description": "<p>You still your mind and study the physiology of your foe, attempting to identify a vulnerability in its defenses.</p>"
                     }
                 }
             }
@@ -792,13 +997,19 @@
             "name": "Irrepressible Spirit",
             "description": "Your tenacity gives you an irrepressible spirit which resists the onset of despair. At the start of your turn if you are not Broken you gain 1 Morale."
         },
+        "Jewelcraft Journeyman": {
+            "name": "Jewelcraft Journeyman"
+        },
+        "Jewelcraft Novice": {
+            "name": "Jewelcraft Novice"
+        },
         "Justiciar": {
             "name": "Justiciar",
             "description": "<p>You are an instrument of justice. Critical Strike attacks also deal the Overflow portion of damage to enemy Morale.</p>"
         },
         "Leg Sweep": {
             "name": "Leg Sweep",
-            "description": "<p>You use a heavy weapon to sweep your enemy off balance, swinging low to knock them from their feet.</p>",
+            "description": "<p>You use a weapon which scales using <strong>Strength </strong>to sweep your enemy off balance, swinging low to knock them from their feet.</p>",
             "actions": {
                 "converter": "translateActionsMap",
                 "entries": {
@@ -821,6 +1032,14 @@
         "Lesser Regeneration": {
             "name": "Lesser Regeneration",
             "description": "<p>Your prodigious hardiness conveys a supernatural capability to recover from wounds quickly. At the start of your turn if you are not Weakened you gain <strong>+1 Health</strong>.</p>"
+        },
+        "Light Weapon Proficiency": {
+            "name": "Light Weapon Proficiency",
+            "description": "<p>You have a fluent education in the use of martial weaponry. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Light</strong> and <strong>Balanced</strong> categories.</p>"
+        },
+        "Light Weapon Training": {
+            "name": "Light Weapon Training",
+            "description": "<p>You have a basic education in the use of finesse weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Light</strong> and <strong>Balanced</strong> categories.</p>"
         },
         "Lightbringer": {
             "name": "Lightbringer",
@@ -861,9 +1080,29 @@
             "name": "Martial Artist",
             "description": "You have honed your body into a dangerous weapon. Your bare fists are treated as weapons of Fine quality, increasing their damage by +1."
         },
-        "Martial Weapon Training": {
-            "name": "Martial Weapon Training",
-            "description": "<p>You are educated and trained in the arts of wielding weapons which require a combination of physical brawn and martial proficiency.</p>\n<p>You gain a +1 Skill bonus to attacks using melee weapons in the <strong>Simple</strong>, <strong>Heavy</strong>, or <strong>Balanced</strong> categories.</p>"
+        "Mechanical Weapon Proficiency": {
+            "name": "Mechanical Weapon Proficiency",
+            "description": "<p>You have a fluent education in the use of crossbows, firearms, and other mechanical weapons. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Mechanical</strong> category.</p>"
+        },
+        "Mechanical Weapon Training": {
+            "name": "Mechanical Weapon Training",
+            "description": "<p>You have a basic education in crossbows, firearms, and other mechanical weapons. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Mechanical </strong>category.</p>"
+        },
+        "Medicine Adept": {
+            "name": "Medicine Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Medicine </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Medicine Journeyman": {
+            "name": "Medicine Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Medicine </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Medicine Master": {
+            "name": "Medicine Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Medicine </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Medicine Novice": {
+            "name": "Medicine Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You have a basic education in anatomy, physiology, and medicine. You gain the <strong>Novice</strong> rank in the <strong>Medicine </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You’ve learned the basics of treating common wounds and illnesses, and keep a running list of known alchemical and herbal compounds that can be used for treating particular illnesses. With a little time studying an injured, diseased, or otherwise ill individual you can perform a basic diagnosis and treat accordingly.</span></p>"
         },
         "Mender": {
             "name": "Mender",
@@ -903,6 +1142,14 @@
                 }
             }
         },
+        "Natural Weapon Proficiency": {
+            "name": "Natural Weapon Proficiency",
+            "description": "<p>You have a fluent familiarity with the use of natural bodily weapons. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Natural </strong>category.</p>"
+        },
+        "Natural Weapon Training": {
+            "name": "Natural Weapon Training",
+            "description": "<p>You have a developed familiarity with using features of your own body as a natural weapons including claws, jaws, tails, or other mechanisms of self-defense. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Natural</strong> category.</p>"
+        },
         "Necromancer": {
             "name": "Necromancer",
             "description": "<p>You are highly skilled in weaving the Rune of Death. Spells which use this Rune cause the Corrupted condition on Critical Hits.</p><p>The Corrupted effect lasts for 3 Rounds and deals your Intellect score as Corruption damage to Health each Round.</p>"
@@ -916,7 +1163,7 @@
                     "Vampiric Bite": {
                         "name": "Vampiric Bite",
                         "condition": "Your target is a living creature.",
-                        "description": "You grasp an enemy and bite it with sharp incisors, rapidly draining its blood to heal your own wounds. This attack requires a free hand to grasp your target while you feed."
+                        "description": "<p>You grasp an enemy and bite it with sharp incisors, rapidly draining its blood to heal your own wounds. This attack requires a free hand to grasp your target while you feed.</p>"
                     }
                 }
             }
@@ -963,6 +1210,35 @@
                     }
                 }
             }
+        },
+        "Penetrating Throw": {
+            "name": "Penetrating Throw",
+            "description": "<p>You can hurl your weapon with such ferocity that it strikes all targets in a direct line.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Penetrating Throw": {
+                        "name": "Penetrating Throw",
+                        "description": "<p>You perform a <strong>Throw</strong> weapon strike which penetrates to hit all enemies in a straight line.</p>"
+                    }
+                }
+            }
+        },
+        "Performance Adept": {
+            "name": "Performance Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Performance </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Performance Journeyman": {
+            "name": "Performance Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Performance </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Performance Master": {
+            "name": "Performance Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Performance </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Performance Novice": {
+            "name": "Performance Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You have learned the basic practices of art and entertainment. You gain the <strong>Novice</strong> rank in the <strong>Performance </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You know a few common dances, have a collection of well-known tales, and you could probably sing or play a few popular songs. You may be trained in an instrument or two, and your capability with a brush or pen is reasonable enough that you could probably create a passable work of art.</span></p>"
         },
         "Perspicacity": {
             "name": "Perspicacity",
@@ -1025,9 +1301,9 @@
             "name": "Powerful Physique",
             "description": "You can wield weapons with the Slow trait and wear Armor with the Bulky trait without suffering Banes to your Initiative rolls."
         },
-        "Practiced Trigonometry": {
-            "name": "Practiced Trigonometry",
-            "description": "<p>Your quickness of wit allows you to apply the principles of mathematics to compute projectile trajectory.</p>\n<p>You gain a +1 Skill Bonus to attacks using Ranged weapons in the <strong>Mechanical</strong> category."
+        "Powerful Throw": {
+            "name": "Powerful Throw",
+            "description": "<p>The maximum range at which you can use <strong>Throw Weapon</strong> is doubled.</p>"
         },
         "Precision Shot": {
             "name": "Precision Shot",
@@ -1049,6 +1325,14 @@
         "Preternatural Instinct": {
             "name": "Preternatural Instinct",
             "description": "Your quickness of mind and body are equally impressive. You gain +2 Boons to all Initiative checks."
+        },
+        "Projectile Weapon Proficiency": {
+            "name": "Projectile Weapon Proficiency",
+            "description": "<p>You have a fluent education in the use of projectile weaponry. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Projectile</strong> category.</p>"
+        },
+        "Projectile Weapon Training": {
+            "name": "Projectile Weapon Training",
+            "description": "<p>You have a basic education in archery and other projectile weaponry. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Projectile </strong>categories.</p>"
         },
         "Provocateur": {
             "name": "Provocateur",
@@ -1081,7 +1365,7 @@
                 "entries": {
                     "Rallying Cry": {
                         "name": "Rallying Cry",
-                        "description": "You emit a courageous bellow that inspires Allies within 3 spaces of you to remain stalwart in the face of danger. You perform an Intimidation skill test against the Madness threshold of your allies. On a success, affected allies become Resolute for one Round.",
+                        "description": "<p>You emit a courageous bellow that inspires Allies within 12 feet of you to remain stalwart in the face of danger. You perform an Intimidation skill test against the Madness threshold of your allies. On a success, affected allies become Resolute for one Round.</p>",
                         "effects": [
                             {
                                 "name": "Rallying Cry"
@@ -1106,7 +1390,21 @@
         },
         "Recognize Spellcraft": {
             "name": "Recognize Spellcraft",
-            "description": "You can interpret the arcane incantations of others to discern the nature of their spellcraft. When an enemy within 10 spaces that you can see and hear begins casting a spell, you can identify its Rune if you have mastered that Rune."
+            "description": "<p>You can interpret the arcane incantations of others to discern the nature of their spellcraft. When an enemy within 40 feet that you can see and hear begins casting a spell, you can identify its Rune if you have mastered that Rune.</p>"
+        },
+        "Repercussive Block": {
+            "name": "Repercussive Block",
+            "description": "<p>You can channel explosive force into a counter-bash which can disarm your opponent when blocking with your shield.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Repercussive Block": {
+                        "name": "Repercussive Block",
+                        "condition": "You Block a Melee attack with an equipped shield.",
+                        "description": "<p>When you <strong>Block</strong> a <strong>Melee</strong> attack, you can react to counter-attack with your equipped shield. This technique is <strong>Harmless</strong> but, if successful, will disarm your opponent forcing their weapon to be <strong>Dropped</strong>.</p>"
+                    }
+                }
+            }
         },
         "Resilient": {
             "name": "Resilient",
@@ -1168,9 +1466,15 @@
             "name": "Runewarden",
             "description": "<p>Your mastery of the arcane makes you more resilient to elemental and spiritual harm. You gain a bonus to <strong>Resistance</strong> equal to half your Wisdom for each Elemental or Spiritual damage type where you know the Arcane Rune attuned to that damage type.</p><p>When you use the <strong>Ward</strong> gesture, the Resistance provided by your Ward also increases by half your Wisdom.</p>"
         },
+        "Runeweaving Journeyman": {
+            "name": "Runeweaving Journeyman"
+        },
+        "Runeweaving Novice": {
+            "name": "Runeweaving Novice"
+        },
         "Ruthless Momentum": {
             "name": "Ruthless Momentum",
-            "description": "You relish the carnage you can cause with a two-handed weapon. After defeating a foe, you continue your attack with ruthless momentum, moving to strike another enemy at reduced cost.",
+            "description": "<p>You relish the carnage you can cause in combat and continue to press the fray as each enemy falls.</p>",
             "actions": {
                 "converter": "translateActionsMap",
                 "entries": {
@@ -1184,7 +1488,23 @@
         },
         "Safecracker": {
             "name": "Safecracker",
-            "description": "You are skilled in the arts of disarming traps and picking locks. You gain +1 Boon on Crafting checks to disable a device or open a lock."
+            "description": "<p>You are skilled in the arts of disarming traps and picking locks. You gain +1 Boon on <strong>Stealth</strong> checks to disable a device or open a lock.</p>"
+        },
+        "Science Adept": {
+            "name": "Science Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Science </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Science Journeyman": {
+            "name": "Science Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Science </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Science Master": {
+            "name": "Science Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Science </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Science Novice": {
+            "name": "Science Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You've learned to study the world around you through structured observation, mathematics, physics, chemistry, and other disciplines. You gain the <strong>Novice</strong> rank in the <strong>Science </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You are familiar with the basic principles of mathematics, physics, chemistry, or other scientific studies. You know how to construct and use simple machines for the purposes of making physical tasks easier. You know some of the more commonly understood scientific theories, and given suitable time to study more complex machines you might be able to at least operate them.</span></p>"
         },
         "Seasoned Veteran": {
             "name": "Seasoned Veteran",
@@ -1233,7 +1553,7 @@
                 "entries": {
                     "Shield Bash": {
                         "name": "Shield Bash",
-                        "description": "<p>Following a basic Strike with your mainhand weapon, you <strong>Strike</strong> with your shield, causing the <strong>Staggered</strong> condition for one Round.</p>",
+                        "description": "<p>Following a basic Strike with your mainhand weapon, you <strong>Strike</strong> with your shield, causing the @Condition[staggered] condition for one Round.</p>",
                         "effects": [
                             {
                                 "name": "Shield Bash"
@@ -1245,7 +1565,7 @@
         },
         "Shield Charge": {
             "name": "Shield Charge",
-            "description": "A defensive technique in which you drive forward, slamming and pushing foes out of your path. You charge up to 6 spaces in a straight line and perform an offhand shield <strong>Strike</strong> against each successive foe along your path.",
+            "description": "<p>A defensive technique in which you drive forward, slamming and pushing foes out of your path. You charge up to 20 feet in a straight line and perform an offhand shield <strong>Strike</strong> against each successive foe along your path.</p>",
             "actions": {
                 "converter": "translateActionsMap",
                 "entries": {
@@ -1256,9 +1576,13 @@
                 }
             }
         },
-        "Shield Training": {
-            "name": "Shield Training",
-            "description": "<p>You are trained in the techniques of using a shield for defense and attack.</p>\n<p>All <strong>Ranged</strong> weapon attacks against you are made with +1 Bane and you gain a +1 Skill bonus to attacks which use your shield.</p>"
+        "Shield Combat Proficiency": {
+            "name": "Shield Combat Proficiency",
+            "description": "<p>You have a fluent education in the use of shields in combat. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Shield </strong>category.</p>"
+        },
+        "Shield Combat Training": {
+            "name": "Shield Combat Training",
+            "description": "<p>You have a basic education in the usage of shields in combat. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Shield </strong>category.</p>"
         },
         "Shield Ward": {
             "name": "Shield Ward",
@@ -1268,9 +1592,31 @@
             "name": "Skirmisher",
             "description": "<p>You are adept at entering and exiting the fray. When moving out of the <strong>Engagement</strong> radius of an enemy, that enemy has 2 Banes to any <strong>Disengagement Strike</strong> against you."
         },
+        "Smithing Journeyman": {
+            "name": "Smithing Journeyman"
+        },
+        "Smithing Novice": {
+            "name": "Smithing Novice"
+        },
         "Snakeblood": {
             "name": "Snakeblood",
             "description": "Your supernatural toughness makes you resistant to venoms and toxins. You gain +5 Resistance to Poison damage."
+        },
+        "Society Adept": {
+            "name": "Society Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Society </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Society Journeyman": {
+            "name": "Society Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Society </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Society Master": {
+            "name": "Society Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Society </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Society Novice": {
+            "name": "Society Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You have learned the fundamental building blocks of Society, the mores, beliefs, history and politics which directly inform the growth of culture. You gain the <strong>Novice</strong> rank in the <strong>Society </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You understand that history and politics contribute prominently to the way decisions are made at the highest and lowest levels of society, and how tradition frequently informs subgroups of society to place them in opposition to one another.</span></p>"
         },
         "Soothe": {
             "name": "Soothe",
@@ -1287,7 +1633,11 @@
         },
         "Spellblade": {
             "name": "Spellblade",
-            "description": "<p>You are an arcane warrior who can weave together Strike and Spell relying on both martial and arcane techniques in battle. The physical strikes of your weaponry partially substitute for the somatic gestures of traditional spellcraft.</p><p>After performing a <strong>Strike</strong> attack, the cost of the next Spell you cast during the same Turn is reduced by <strong>1 Action</strong>.</p>"
+            "description": "<p>You are an arcane warrior who can weave together Strike and Spell relying on both martial and arcane techniques in battle. The physical strikes of your weaponry partially substitute for the somatic gestures of traditional spellcraft.</p><p>While wielding a <strong>Melee</strong> weapon as your mainhand weapon, spells you cast using <strong>Gesture: Strike</strong> benefit from your weapon's damage bonus.</p><p>Immediately after performing a <strong>Strike</strong> with a melee weapon, you may cast a spell with its <strong>Action</strong> cost reduced by 1.</p>"
+        },
+        "Spellmute": {
+            "name": "Spellmute",
+            "description": "<p>Currents of magic flow strangely around you, as if unaware of your presence.</p><p>You cannot perform any action with the <strong>Spell</strong> tag. Spells which target you suffer +2 <strong>Banes</strong> regardless of whether they impose harmful or beneficial effects.</p>"
         },
         "Steadfast": {
             "name": "Steadfast",
@@ -1307,13 +1657,29 @@
                 }
             }
         },
+        "Stealth Adept": {
+            "name": "Stealth Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Stealth </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Stealth Journeyman": {
+            "name": "Stealth Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Stealth </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Stealth Master": {
+            "name": "Stealth Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Stealth </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Stealth Novice": {
+            "name": "Stealth Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You have received training in the basics of stealth, infiltration, and subterfuge. You gain the <strong>Novice</strong> rank in the <strong>Stealth </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You know how to use light and shadow to mask your presence, to distribute your weight when walking in order to move more quietly, and you have learned a few tricks of disguise in order to blend into a crowd. You can appear unsuspicious when surrounded by others, hide in a darkened room, and can move silently enough to avoid detection by the average person.</span></p>"
+        },
         "Still Lake": {
             "name": "Still Lake",
             "description": "<p>Your life experiences provide serenity that allows you to resist the attempted manipulation of others.</p><p><strong>Skill Attacks</strong> against you from any of the <strong>Social</strong> skills are made with <strong>2 Banes</strong>.</p>"
         },
         "Strategic Repositioning": {
             "name": "Strategic Repositioning",
-            "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not Unaware, you may immediately move <strong>1 Space</strong> in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p>"
+            "description": "<p>You are always thinking ahead about where to position yourself should danger loom. Before <strong>Turn 1</strong> of a Combat encounter, provided that you are not Unaware, you may immediately move 4 feet in any permitted direction.</p><p>If multiple combatants have this feature, repositioning occurs in reverse order of Initiative.</p>"
         },
         "Strike First": {
             "name": "Strike First",
@@ -1397,13 +1763,23 @@
                 }
             }
         },
+        "Tailoring Journeyman": {
+            "name": "Tailoring Journeyman"
+        },
+        "Tailoring Novice": {
+            "name": "Tailoring Novice"
+        },
+        "Talisman Weapon Proficiency": {
+            "name": "Talisman Weapon Proficiency",
+            "description": "<p>You have a fluent education in the use of talismans, orbs, foci, or other similar weapons. You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Talisman </strong>category.</p>"
+        },
+        "Talisman Weapon Training": {
+            "name": "Talisman Weapon Training",
+            "description": "<p>You have a basic education in the use of talismans, orbs, foci, or other similar weapons. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Talisman</strong> categories.</p>"
+        },
         "Testudo": {
             "name": "Testudo",
             "description": "You are highly skilled in using shields to adopt a defensive posture. You gain double the benefit of the <strong>Guarded</strong> condition against <strong>Weapon Attacks</strong> while wielding a shield."
-        },
-        "Theory of Armaments": {
-            "name": "Theory of Armaments",
-            "description": "The theory and physics of combat are a matter of study for you. You gain a +1 Skill Bonus to attacks using weapons in the <strong>Balanced</strong> or <strong>Projectile</strong> categories."
         },
         "Thick Skin": {
             "name": "Thick Skin",
@@ -1428,13 +1804,13 @@
         },
         "Tumble Through": {
             "name": "Tumble Through",
-            "description": "You can use your athleticism in dangerous situations to escape harm or bypass enemy combatants.",
+            "description": "<p>You can use your athleticism in dangerous situations to escape harm or bypass enemy combatants.</p>",
             "actions": {
                 "converter": "translateActionsMap",
                 "entries": {
                     "Tumble": {
                         "name": "Tumble",
-                        "description": "<p>Make a <strong>Pathfinding</strong> skill Attack against an adjacent enemy contested by your target's <strong>Reflex</strong> defense.</p><p>On a success you may move up to twice your <strong>Stride</strong>, including the ability to pass through your target enemy's space, without provoking any <strong>Disengagement</strong> reactions.</p><p>On a failure your movement is blocked and your remain in your current position.</p>"
+                        "description": "<p>Make a <strong>Athletics </strong>skill Attack against an adjacent enemy contested by your target's <strong>Reflex</strong> defense.</p><p>On a success you may move up to twice your <strong>Stride</strong>, including the ability to pass through your target enemy's space, without provoking any <strong>Disengagement</strong> reactions.</p><p>On a failure your movement is blocked and your remain in your current position.</p>"
                     }
                 }
             }
@@ -1456,9 +1832,13 @@
             "name": "Unarmed Blocking",
             "description": "Your honed reflexes and physical toughness allow you to block enemy blows using your bare arms. While <strong>Unarmed</strong>, half your Toughness score contributes to your <strong>Block</strong> defense."
         },
-        "Unarmed Weapon Training": {
-            "name": "Unarmed Weapon Training",
-            "description": "<p>You are educated and trained in the arts of unarmed combat.</p>\n<p>You gain a +1 Skill bonus to attacks using melee weapons in the <strong>Unarmed</strong> or <strong>Natural</strong> categories.</p>"
+        "Unarmed Combat Proficiency": {
+            "name": "Unarmed Combat Proficiency",
+            "description": "<p>You have a fluent education  in hand-to-hand combat and other martial arts.  You gain the <strong>Journeyman</strong> training rank and a <strong>+1 Skill Bonus</strong> with weapons in the <strong>Unarmed </strong>category.</p>"
+        },
+        "Unarmed Combat Training": {
+            "name": "Unarmed Combat Training",
+            "description": "<p>You have a basic education in hand-to-hand combat and other martial arts. You are no longer treated as <strong>Untrained</strong> with weapons in the <strong>Unarmed </strong>category.</p>"
         },
         "Unshakeable Stance": {
             "name": "Unshakeable Stance",
@@ -1476,6 +1856,10 @@
                     }
                 }
             }
+        },
+        "Versatile Translator": {
+            "name": "Versatile Translator",
+            "description": "<p>You have a scholarly background in linguistics or an intuitive knack for languages. Your capabilities enable you to decipher the basic meaning of text written in a variety of languages.</p><p>You can translate text of a language you do not know that is written using a common set of glyphs or characters to a language that you do know. Creating such a translation requires spending one minute per word to transcribe the text into a language which you understand.</p><p>Your translations are rudimentary and often lack nuance, but they do contain all essential points of the text.</p>"
         },
         "Voidcaller": {
             "name": "Voidcaller",
@@ -1507,6 +1891,35 @@
             "name": "Weak Points",
             "description": "You identify moments of opportunity to strike at an enemy's weak points. When attacking a target that is <strong>Unaware</strong>, <strong>Flanked</strong>, or <strong>Exposed</strong> using Finesse weaponry, you gain +2 damage to any Strike."
         },
+        "Wilderness Adept": {
+            "name": "Wilderness Adept",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Adept </strong>rank in the <strong>Wilderness </strong>skill, providing a <strong>+2 Skill Bonus</strong>.</span></p>"
+        },
+        "Wilderness Journeyman": {
+            "name": "Wilderness Journeyman",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Journeyman </strong>rank in the <strong>Wilderness </strong>skill, providing a <strong>+1 Skill Bonus</strong>.</span></p>"
+        },
+        "Wilderness Master": {
+            "name": "Wilderness Master",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You gain the <strong>Master </strong>rank in the <strong>Wilderness </strong>skill, providing a <strong>+3 Skill Bonus</strong>.</span></p>"
+        },
+        "Wilderness Novice": {
+            "name": "Wilderness Novice",
+            "description": "<p><span style=\"font-family:Vollkorn, serif\">You have received training in the basics of wilderness survival and traversal. You gain the <strong>Novice</strong> rank in the <strong>Wilderness </strong>skill and are no longer considered <strong>Untrained</strong> in that skill.</span></p><p><span style=\"font-family:Vollkorn, serif\">You know how to find and construct safe shelter from the elements, to start a fire for warmth, to keep cool in hot environments. You can find safe, drinkable water in most places, and how to identify which plants and animals can serve as safe food sources.</span></p>"
+        },
+        "Wildspeaker": {
+            "name": "Wildspeaker",
+            "description": "<p>You have a preternatural knack for communicating with animals. Through body language and sounds, you are capable of interpreting and communicating in the language of the wilderness.</p>",
+            "actions": {
+                "converter": "translateActionsMap",
+                "entries": {
+                    "Wildspeak": {
+                        "name": "Wildspeak",
+                        "description": "<p>If you succeed on a [[/skillCheck wilderness 14]] check, you may pose simple questions to a <strong>Beast</strong> which can perceive you. As long as the creature is not hostile it will respond accurately within the limits of its own knowledge.</p><ul><li><p>Beasts with an <strong>Intellect</strong> score of zero are incapable of understanding you.</p></li><li><p>Beasts with an <strong>Intellect</strong> score of 1 can only respond with \"yes\" or \"no\" responses.</p></li><li><p>Beasts with an <strong>Intellect</strong> score greater than 1 can provide simple multi-word responses.</p></li></ul>"
+                    }
+                }
+            }
+        },
         "Wrestler": {
             "name": "Wrestler",
             "description": "You are able to subdue opponents using your physical Strength.",
@@ -1515,7 +1928,7 @@
                 "entries": {
                     "Grapple": {
                         "name": "Grapple",
-                        "description": "Perform a melee attack against an adjacent target. If successful, both you and your target are Restrained for 1 Round.",
+                        "description": "<p>Perform a <strong>Athletics</strong> skill attack against an adjacent target. If successful, both you and your target are Restrained for 1 Round.</p>",
                         "effects": [
                             {
                                 "name": "Grapple"
